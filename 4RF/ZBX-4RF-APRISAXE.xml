@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>AUS 4RF AprisaXE</template>
-            <name>AUS 4RF AprisaXE</name>
+            <template>Template 4RF AprisaXE</template>
+            <name>Template 4RF AprisaXE</name>
             <description/>
             <groups>
                 <group>
@@ -3589,7 +3589,7 @@
             </macros>
             <templates>
                 <template>
-                    <name>AUS 4RF Common</name>
+                    <name>Template 4RF Common</name>
                 </template>
                 <template>
                     <name>AUS ICMP Ping - Standard</name>
@@ -3606,7 +3606,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{AUS 4RF AprisaXE:aprisaXEFan1Status.last(1m)} &gt; 1</expression>
+            <expression>{Template 4RF AprisaXE:aprisaXEFan1Status.last(1m)} &gt; 1</expression>
             <name>Fan #1 failed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3616,7 +3616,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{AUS 4RF AprisaXE:aprisaXEFan2Status.last(1m)} &gt; 1</expression>
+            <expression>{Template 4RF AprisaXE:aprisaXEFan2Status.last(1m)} &gt; 1</expression>
             <name>Fan #2 failed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3626,7 +3626,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{AUS 4RF AprisaXE:aprisaXEModemMuteState.last(1m)}=1</expression>
+            <expression>{Template 4RF AprisaXE:aprisaXEModemMuteState.last(1m)}=1</expression>
             <name>Modem Mute [{ITEM.VALUE}] on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3636,7 +3636,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{AUS 4RF AprisaXE:aprisaXEMotherboardSerialNumber.diff(0)}&gt;0</expression>
+            <expression>{Template 4RF AprisaXE:aprisaXEMotherboardSerialNumber.diff(0)}&gt;0</expression>
             <name>Motherboard serial number changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3646,7 +3646,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{AUS 4RF AprisaXE:aprisaXETerminalRSSI.max(5m)} &lt; -80</expression>
+            <expression>{Template 4RF AprisaXE:aprisaXETerminalRSSI.max(5m)} &lt; -80</expression>
             <name>NETWORK: RSSI is too high on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3656,7 +3656,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{AUS 4RF AprisaXE:aprisaXEModemSNR.min(5m)} &lt; 15</expression>
+            <expression>{Template 4RF AprisaXE:aprisaXEModemSNR.min(5m)} &lt; 15</expression>
             <name>NETWORK: SNR is too low on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3666,7 +3666,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{AUS 4RF AprisaXE:sysUpTime.last(0)}&lt;600</expression>
+            <expression>{Template 4RF AprisaXE:sysUpTime.last(0)}&lt;600</expression>
             <name>NETWORK: {HOSTNAME} has just been restarted</name>
             <url/>
             <status>0</status>
@@ -3676,7 +3676,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{AUS 4RF AprisaXE:aprisaXEReceiverSerialNumber.diff(0)}&gt;0</expression>
+            <expression>{Template 4RF AprisaXE:aprisaXEReceiverSerialNumber.diff(0)}&gt;0</expression>
             <name>Receiver serial number changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3686,7 +3686,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{AUS 4RF AprisaXE:aprisaXETerminalAlarmStatus.last(1m)}=5</expression>
+            <expression>{Template 4RF AprisaXE:aprisaXETerminalAlarmStatus.last(1m)}=5</expression>
             <name>Terminal Status changed to CRITICAL</name>
             <url/>
             <status>0</status>
@@ -3696,7 +3696,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{AUS 4RF AprisaXE:aprisaXETerminalAlarmStatus.last(1m)}=4</expression>
+            <expression>{Template 4RF AprisaXE:aprisaXETerminalAlarmStatus.last(1m)}=4</expression>
             <name>Terminal Status changed to MAJOR ALARM</name>
             <url/>
             <status>0</status>
@@ -3706,7 +3706,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{AUS 4RF AprisaXE:aprisaXETerminalAlarmStatus.last(1m)}=3</expression>
+            <expression>{Template 4RF AprisaXE:aprisaXETerminalAlarmStatus.last(1m)}=3</expression>
             <name>Terminal Status changed to MINOR ALARM</name>
             <url/>
             <status>0</status>
@@ -3716,7 +3716,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{AUS 4RF AprisaXE:aprisaXETransmitterSerialNumber.diff(0)}&gt;0</expression>
+            <expression>{Template 4RF AprisaXE:aprisaXETransmitterSerialNumber.diff(0)}&gt;0</expression>
             <name>Transmitter serial number changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3753,7 +3753,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>AUS 4RF AprisaXE</host>
+                        <host>Template 4RF AprisaXE</host>
                         <key>aprisaXEFan1Status</key>
                     </item>
                 </graph_item>
@@ -3765,7 +3765,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>AUS 4RF AprisaXE</host>
+                        <host>Template 4RF AprisaXE</host>
                         <key>aprisaXEFan2Status</key>
                     </item>
                 </graph_item>
@@ -3777,7 +3777,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>AUS 4RF AprisaXE</host>
+                        <host>Template 4RF AprisaXE</host>
                         <key>aprisaXETerminalAlarmStatus</key>
                     </item>
                 </graph_item>
