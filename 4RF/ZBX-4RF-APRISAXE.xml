@@ -3587,20 +3587,7 @@
                     <value>1</value>
                 </macro>
             </macros>
-            <templates>
-                <template>
-                    <name>Template 4RF Common</name>
-                </template>
-                <template>
-                    <name>AUS ICMP Ping - Standard</name>
-                </template>
-                <template>
-                    <name>Template SNMP Generic</name>
-                </template>
-                <template>
-                    <name>Template SNMP Interfaces</name>
-                </template>
-            </templates>
+            <templates/>
             <screens/>
         </template>
     </templates>
