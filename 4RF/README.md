@@ -6,8 +6,8 @@ A collection of Zabbix templates to manage [4RF](http://www.4rf.com) devices.
 Templates
 ---------
 
-  * [ZBX-4RF-APRISAXE](https://github.com/bradpeczka/zabbix/tree/master/Zabbix/4RF/ZBX-4RF-APRISAXE) => use the 4RF-APRISAXE-MIB to discover and manage both AprisaXE Microwave systems.
-  * [ZBX-4RF-COMMON](https://github.com/bradpeczka/zabbix/tree/master/Zabbix/4RF/ZBX-4RF-COMMON) => use the 4RF-COMMON-MIB to discover management information from 4RF products.
+  * [ZBX-4RF-APRISAXE](https://github.com/bradpeczka/zabbix/blob/master/Zabbix/4RF/ZBX-4RF-APRISAXE) => use the 4RF-APRISAXE-MIB to discover and manage both AprisaXE Microwave systems.
+  * [ZBX-4RF-COMMON](https://github.com/bradpeczka/zabbix/blob/master/Zabbix/4RF/ZBX-4RF-COMMON) => use the 4RF-COMMON-MIB to discover management information from 4RF products.
 
 Requirements
 ------------
