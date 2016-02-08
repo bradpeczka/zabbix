@@ -3715,11 +3715,7 @@
                 </discovery_rule>
             </discovery_rules>
             <macros/>
-            <templates>
-                <template>
-                    <name>AUS ICMP Ping - Standard</name>
-                </template>
-            </templates>
+            <templates/>
             <screens/>
         </template>
     </templates>
