@@ -1,7 +1,7 @@
 ZBX-4RF-TEMPLATES
 ===================
 
-A collection of Zabbix templates to manage [4RF](http://www.4rf.com) devices.
+A collection of Zabbix templates to manage [4RF](http://www.4rf.com) devices using SNMP.
 
 Templates
 ---------
