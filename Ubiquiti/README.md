@@ -1,7 +1,7 @@
 ZBX-UBNT-AIRMAX
 ==============
 
-This template uses the UBNT-AIRMAX-MIB to discover and monitor Ubiquiti Networks AirMAX radios.
+This template uses the UBNT-AIRMAX-MIB to discover and monitor Ubiquiti Networks AirMAX radios using SNMP.
 
 Items
 -----
