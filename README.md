@@ -8,6 +8,7 @@ Templates
 
   * [4RF](https://github.com/bradpeczka/zabbix/tree/master/4RF) => templates to discover and monitor [4RF](http://www.4rf.com) devices.
   * [Eaton](https://github.com/bradpeczka/zabbix/tree/master/Eaton) => templates to discover and monitor [Eaton](http://www.eaton.com) devices.
+  * [Liebert](https://github.com/bradpeczka/zabbix/tree/master/Liebert) => templates to discover and monitor [Emerson Network Power/Liebert](http://www.emersonnetworkpower.com) devices.
   * [Ubiquiti](https://github.com/bradpeczka/zabbix/tree/master/Ubiquiti) => templates to discover and monitor [Ubiquiti Networks](http://www.ubnt.com) devices.
 
 Requirements
