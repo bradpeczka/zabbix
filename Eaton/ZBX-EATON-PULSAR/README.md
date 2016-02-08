@@ -160,7 +160,7 @@ Installation
 Requirements
 ------------
 
-This template was tested on Zabbix 2.4.6.
+This template was tested on Zabbix 2.4.6, and will work with UPSes from a varity of brands including: Dell, Eaton, MGE, Merlin Gerin, and Powerware. 
 
 License
 -------
