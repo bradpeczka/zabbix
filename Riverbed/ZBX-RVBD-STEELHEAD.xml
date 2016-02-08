@@ -1528,17 +1528,7 @@
                     <value>R5m76AFww5</value>
                 </>
             </s>
-            <templates>
-                <template>
-                    <name>AUS ICMP Ping - Standard</name>
-                </template>
-                <template>
-                    <name>Template SNMP Generic</name>
-                </template>
-                <template>
-                    <name>Template SNMP Interfaces</name>
-                </template>
-            </templates>
+            <templates/>
             <screens/>
         </template>
     </templates>
