@@ -139,7 +139,7 @@
                     <name>Battery - Current</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                    <multiplier>1</multiplier>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.2.3.0</snmp_oid>
                     <key>1.3.6.1.4.1.534.1.2.3.0</key>
                     <delay>60</delay>
@@ -313,7 +313,7 @@
                     <name>Battery - Voltage</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                    <multiplier>1</multiplier>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.2.2.0</snmp_oid>
                     <key>1.3.6.1.4.1.534.1.2.2.0</key>
                     <delay>60</delay>
