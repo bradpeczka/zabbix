@@ -10,7 +10,8 @@ Templates
   * [APC](https://github.com/bradpeczka/zabbix/tree/master/APC) => templates to discover and monitor [American Power Conversion](http://www.apc.com) devices.
   * [Cisco](https://github.com/bradpeczka/zabbix/tree/master/Cisco) => templates to discover and monitor [Cisco Systems](http://www.cisco.com) devices.
   * [Eaton](https://github.com/bradpeczka/zabbix/tree/master/Eaton) => templates to discover and monitor [Eaton](http://www.eaton.com) devices.
-  * [Liebert](https://github.com/bradpeczka/zabbix/tree/master/Liebert) => templates to discover and monitor [Emerson Network Power/Liebert](http://www.emersonnetworkpower.com) devices.
+  * [HW-Group](http://www.hw-group.com/) => templates to discover any monitor [HW-Group](http://www.hw-group.com/) devices.
+  * [Liebert](https://github.com/bradpeczka/zabbix/tree/master/Liebert) => templates to discover and monitor [Emerson Network Power/Liebert/Vertiv](http://www.vertivco.com) devices.
   * [Riverbed](https://github.com/bradpeczka/zabbix/tree/master/Riverbed) => templates to discover and monitor [Riverbed](http://www.riverbed.com) devices.
   * [Ubiquiti](https://github.com/bradpeczka/zabbix/tree/master/Ubiquiti) => templates to discover and monitor [Ubiquiti Networks](http://www.ubnt.com) devices.
 
