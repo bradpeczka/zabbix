@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2016-02-08T10:43:05Z</date>
+    <date>2017-08-29T00:16:12Z</date>
     <groups>
-        <group>
-            <name>Infrastructure</name>
-        </group>
         <group>
             <name>Templates</name>
         </group>
@@ -16,9 +13,6 @@
             <name>ZBX-LIEBERT-CRAC</name>
             <description/>
             <groups>
-                <group>
-                    <name>Infrastructure</name>
-                </group>
                 <group>
                     <name>Templates</name>
                 </group>
@@ -1412,12 +1406,12 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Humidity - Control Measurement</name>
+                    <name>Humidity - High Threshold</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
-                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.2.2.3.1.3.1</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.2.2.3.1.3.1</key>
+                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.2.2.3.1.4.1</snmp_oid>
+                    <key>lgpEnvHumidityHighThresholdRel</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1455,12 +1449,55 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Humidity - Return Air</name>
+                    <name>Humidity - Low Threshold</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
-                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.2.2.3.1.3.2</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.2.2.3.1.3.2</key>
+                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.2.2.3.1.5.1</snmp_oid>
+                    <key>lgpEnvHumidityLowThresholdRel</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>%</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Humidity</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Humidity - Measurement</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.2.2.3.1.3.1</snmp_oid>
+                    <key>lgpEnvHumidityMeasurementRel</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2277,7 +2314,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.11.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.11.0</key>
+                    <key>lgpEnvStateAudibleAlarm</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2322,7 +2359,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.2.0</key>
+                    <key>lgpEnvStateCooling</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2367,7 +2404,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.5.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.5.0</key>
+                    <key>lgpEnvStateDehumidifying</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2412,7 +2449,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.6.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.6.0</key>
+                    <key>lgpEnvStateEconoCycle</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2457,7 +2494,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.21.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.21.0</key>
+                    <key>lgpEnvStateElectricHeater</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2502,7 +2539,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.7.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.7.0</key>
+                    <key>lgpEnvStateFan</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2547,7 +2584,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.20.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.20.0</key>
+                    <key>lgpEnvStateFreeCooling</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2592,7 +2629,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.8.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.8.0</key>
+                    <key>lgpEnvStateGeneralAlarmOutput</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2637,7 +2674,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.3.0</key>
+                    <key>lgpEnvStateHeating</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2682,7 +2719,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.22.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.22.0</key>
+                    <key>lgpEnvStateHotWater</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2727,7 +2764,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.4.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.4.0</key>
+                    <key>lgpEnvStateHumidifying</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2772,7 +2809,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.15.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.15.0</key>
+                    <key>lgpEnvStateOperatingMode</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2817,7 +2854,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.14.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.14.0</key>
+                    <key>lgpEnvStateOperatingReason</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2862,7 +2899,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.1.0</key>
+                    <key>lgpEnvStateSystem</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2907,7 +2944,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.9.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.9.0</key>
+                    <key>lgpEnvStateCoolingCapacity</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2950,7 +2987,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.18.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.18.0</key>
+                    <key>lgpEnvStateDehumidifyingCapacity</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2993,7 +3030,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.17.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.17.0</key>
+                    <key>lgpEnvStateFanCapacity</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -3036,7 +3073,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.10.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.10.0</key>
+                    <key>lgpEnvStateHeatingCapacity</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -3079,7 +3116,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.19.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.3.19.0</key>
+                    <key>lgpEnvStateHumidifyingCapacity</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -3122,7 +3159,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.1</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.1</key>
+                    <key>lgpEnvControlTemperatureMeasurementDegC</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -3165,7 +3202,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.4</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.4</key>
+                    <key>lgpEnvDigitalScrollCompressor1TemperatureMeasurementDegC</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -3208,7 +3245,93 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.5</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.5</key>
+                    <key>lgpEnvDigitalScrollCompressor2TemperatureMeasurementDegC</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>C</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperature</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Temperature - High Threshold</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.4.1</snmp_oid>
+                    <key>lgpEnvTemperatureHighThresholdDegC</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>C</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperature</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Temperature - Low Threshold</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.5.1</snmp_oid>
+                    <key>lgpEnvTemperatureLowThresholdDegC</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -3251,7 +3374,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.3</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.3</key>
+                    <key>lgpEnvReturnAirTemperatureMeasurementDegC</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -3294,7 +3417,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.1.3.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.1.3.1.0</key>
+                    <key>lgpEnvTemperatureSettingDegC</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -3337,7 +3460,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.2</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.2</key>
+                    <key>lgpEnvSupplyAirTemperatureMeasurementDegC</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -3380,7 +3503,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.1.3.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.1.3.2.0</key>
+                    <key>lgpEnvTemperatureToleranceDegC</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -3966,13 +4089,17 @@
                 </discovery_rule>
             </discovery_rules>
             <macros/>
-            <templates/>
+            <templates>
+                <template>
+                    <name>AUS ICMP Ping - Standard</name>
+                </template>
+            </templates>
             <screens/>
         </template>
     </templates>
     <triggers>
         <trigger>
-            <expression>{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.3.11.0.last(0)}=1</expression>
+            <expression>{Template CRAC Liebert:lgpEnvStateAudibleAlarm.last(0)}=1</expression>
             <name>{HOST.NAME} Audible Alarm Output is ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3982,7 +4109,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.3.8.0.last(0)}=1</expression>
+            <expression>{Template CRAC Liebert:lgpEnvStateGeneralAlarmOutput.last(0)}=1</expression>
             <name>{HOST.NAME} General Alarm Output is ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3992,8 +4119,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.2.2.1.0.last(0)}+{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.2.2.2.0.last(0)}&lt;{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.2.2.3.1.3.1.last(1m)}</expression>
-            <name>{HOST.NAME} High Humidity Alarm: ({ITEM.VALUE1})</name>
+            <expression>{Template CRAC Liebert:lgpEnvHumidityHighThresholdRel.last(0)}&lt;{Template CRAC Liebert:lgpEnvHumidityMeasurementRel.last(1m)}</expression>
+            <name>{HOST.NAME} High Humidity Alarm: ({ITEM.VALUE2})</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -4002,13 +4129,13 @@
             <dependencies>
                 <dependency>
                     <name>{HOST.NAME} power changed to {ITEM.VALUE1}</name>
-                    <expression>{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.3.1.0.last(0)}=2</expression>
+                    <expression>{Template CRAC Liebert:lgpEnvStateSystem.diff(0)}&gt;0</expression>
                 </dependency>
             </dependencies>
         </trigger>
         <trigger>
-            <expression>{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.1.3.1.0.last(0)}+{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.1.3.2.0.last(0)}&lt;{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.1.last(1m)}</expression>
-            <name>{HOST.NAME} High Temperature Alarm: ({ITEM.VALUE1})</name>
+            <expression>{Template CRAC Liebert:lgpEnvTemperatureHighThresholdDegC.last(0)}&lt;{Template CRAC Liebert:lgpEnvControlTemperatureMeasurementDegC.last(1m)}</expression>
+            <name>{HOST.NAME} High Temperature Alarm: ({ITEM.VALUE2})</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -4017,13 +4144,13 @@
             <dependencies>
                 <dependency>
                     <name>{HOST.NAME} power changed to {ITEM.VALUE1}</name>
-                    <expression>{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.3.1.0.last(0)}=2</expression>
+                    <expression>{Template CRAC Liebert:lgpEnvStateSystem.diff(0)}&gt;0</expression>
                 </dependency>
             </dependencies>
         </trigger>
         <trigger>
-            <expression>{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.2.2.1.0.last(0)}-{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.2.2.2.0.last(0)}&gt;{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.2.2.3.1.3.1.last(1m)}</expression>
-            <name>{HOST.NAME} Low Humidity Alarm: ({ITEM.VALUE1})</name>
+            <expression>{Template CRAC Liebert:lgpEnvHumidityLowThresholdRel.last(0)}&gt;{Template CRAC Liebert:lgpEnvHumidityMeasurementRel.last(1m)}</expression>
+            <name>{HOST.NAME} Low Humidity Alarm: ({ITEM.VALUE2})</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -4032,13 +4159,13 @@
             <dependencies>
                 <dependency>
                     <name>{HOST.NAME} power changed to {ITEM.VALUE1}</name>
-                    <expression>{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.3.1.0.last(0)}=2</expression>
+                    <expression>{Template CRAC Liebert:lgpEnvStateSystem.diff(0)}&gt;0</expression>
                 </dependency>
             </dependencies>
         </trigger>
         <trigger>
-            <expression>{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.1.3.1.0.last(0)}-{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.1.3.2.0.last(0)}&gt;{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.1.last(1m)}</expression>
-            <name>{HOST.NAME} Low Temperature Alarm: ({ITEM.VALUE1})</name>
+            <expression>{Template CRAC Liebert:lgpEnvTemperatureLowThresholdDegC.last(0)}&gt;{Template CRAC Liebert:lgpEnvControlTemperatureMeasurementDegC.last(1m)}</expression>
+            <name>{HOST.NAME} Low Temperature Alarm: ({ITEM.VALUE2})</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -4047,12 +4174,12 @@
             <dependencies>
                 <dependency>
                     <name>{HOST.NAME} power changed to {ITEM.VALUE1}</name>
-                    <expression>{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.3.1.0.last(0)}=2</expression>
+                    <expression>{Template CRAC Liebert:lgpEnvStateSystem.diff(0)}&gt;0</expression>
                 </dependency>
             </dependencies>
         </trigger>
         <trigger>
-            <expression>{ZBX-LIEBERT-CRAC:1.3.6.1.4.1.476.1.42.3.4.3.1.0.last(0)}=2</expression>
+            <expression>{Template CRAC Liebert:lgpEnvStateSystem.diff(0)}&gt;0</expression>
             <name>{HOST.NAME} power changed to {ITEM.VALUE1}</name>
             <url/>
             <status>0</status>
@@ -4061,10 +4188,20 @@
             <type>0</type>
             <dependencies/>
         </trigger>
+        <trigger>
+            <expression>{Template CRAC Liebert:lgpEnvStateSystem.last(0)}=2 and {Template CRAC Liebert:lgpEnvStateOperatingReason.last(0)}=3</expression>
+            <name>{HOST.NAME} status changed to {ITEM.VALUE1} due to {ITEM.VALUE2}</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
     </triggers>
     <graphs>
         <graph>
-            <name>Temperature &amp; Humidity</name>
+            <name>Humidity</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -4089,8 +4226,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>ZBX-LIEBERT-CRAC</host>
-                        <key>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.1</key>
+                        <host>Template CRAC Liebert</host>
+                        <key>lgpEnvHumidityHighThresholdRel</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4101,32 +4238,100 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>ZBX-LIEBERT-CRAC</host>
-                        <key>1.3.6.1.4.1.476.1.42.3.4.1.3.1.0</key>
+                        <host>Template CRAC Liebert</host>
+                        <key>lgpEnvHumidityLowThresholdRel</key>
                     </item>
                 </graph_item>
                 <graph_item>
                     <sortorder>2</sortorder>
                     <drawtype>0</drawtype>
                     <color>0000C8</color>
-                    <yaxisside>1</yaxisside>
+                    <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>ZBX-LIEBERT-CRAC</host>
-                        <key>1.3.6.1.4.1.476.1.42.3.4.2.2.3.1.3.1</key>
+                        <host>Template CRAC Liebert</host>
+                        <key>lgpEnvHumidityMeasurementRel</key>
                     </item>
                 </graph_item>
                 <graph_item>
                     <sortorder>3</sortorder>
                     <drawtype>0</drawtype>
                     <color>C800C8</color>
-                    <yaxisside>1</yaxisside>
+                    <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>ZBX-LIEBERT-CRAC</host>
+                        <host>Template CRAC Liebert</host>
                         <key>1.3.6.1.4.1.476.1.42.3.4.2.2.1.0</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Temperature</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>0</ymin_type_1>
+            <ymax_type_1>0</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>00C800</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template CRAC Liebert</host>
+                        <key>lgpEnvControlTemperatureMeasurementDegC</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>C80000</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template CRAC Liebert</host>
+                        <key>lgpEnvTemperatureSettingDegC</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>0000C8</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template CRAC Liebert</host>
+                        <key>lgpEnvTemperatureHighThresholdDegC</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>C800C8</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template CRAC Liebert</host>
+                        <key>lgpEnvTemperatureLowThresholdDegC</key>
                     </item>
                 </graph_item>
             </graph_items>
