@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2016-02-08T09:46:40Z</date>
+    <date>2017-08-29T00:22:48Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -55,7 +55,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
@@ -84,7 +84,7 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -98,7 +98,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>A</units>
                     <delta>0</delta>
@@ -127,7 +127,7 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -141,7 +141,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>4</_type>
+                    <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -170,7 +170,7 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -184,7 +184,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>0</_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -213,9 +213,9 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgTestDiagResult</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -229,7 +229,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
@@ -258,7 +258,7 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -272,7 +272,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>s</units>
                     <delta>0</delta>
@@ -301,7 +301,7 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -315,7 +315,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>C</units>
                     <delta>0</delta>
@@ -344,7 +344,7 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -358,7 +358,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>0</_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -387,9 +387,9 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgTestBatterySchedule</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -403,7 +403,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>s</units>
                     <delta>0</delta>
@@ -432,7 +432,7 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -446,7 +446,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>s</units>
                     <delta>0</delta>
@@ -475,7 +475,7 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -489,7 +489,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <delta>0</delta>
@@ -518,7 +518,7 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -532,7 +532,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -561,9 +561,9 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -577,7 +577,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -606,9 +606,9 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -622,7 +622,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -651,9 +651,9 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -667,7 +667,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -696,9 +696,9 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -712,7 +712,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -741,9 +741,9 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -757,7 +757,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -786,9 +786,9 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -802,7 +802,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -831,9 +831,9 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -847,7 +847,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -876,9 +876,9 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -892,7 +892,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -921,9 +921,9 @@
                             <name>Battery</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -937,7 +937,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>0</_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -966,9 +966,9 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -982,7 +982,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>0</_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -1011,9 +1011,9 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1027,7 +1027,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>0</_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -1056,9 +1056,9 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1072,7 +1072,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>s</units>
                     <delta>0</delta>
@@ -1101,7 +1101,7 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1115,7 +1115,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>0</_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -1144,9 +1144,9 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1160,7 +1160,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -1189,9 +1189,9 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgConfigAutoRestart</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1205,7 +1205,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -1234,9 +1234,9 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1250,7 +1250,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>0</_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -1279,9 +1279,9 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgConfigByPassType</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1295,7 +1295,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <delta>0</delta>
@@ -1324,7 +1324,7 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1338,7 +1338,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
@@ -1367,7 +1367,7 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1381,7 +1381,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>s</units>
                     <delta>0</delta>
@@ -1410,7 +1410,7 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1424,7 +1424,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <delta>0</delta>
@@ -1453,7 +1453,7 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1467,7 +1467,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <delta>0</delta>
@@ -1496,7 +1496,7 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1510,7 +1510,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>A</units>
                     <delta>0</delta>
@@ -1539,7 +1539,7 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1553,7 +1553,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>Hz</units>
                     <delta>0</delta>
@@ -1582,7 +1582,7 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1596,7 +1596,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>V</units>
                     <delta>0</delta>
@@ -1625,7 +1625,7 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1639,7 +1639,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>VA</units>
                     <delta>0</delta>
@@ -1668,7 +1668,7 @@
                             <name>Config</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1682,7 +1682,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
@@ -1711,7 +1711,7 @@
                             <name>Environment</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1725,7 +1725,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>C</units>
                     <delta>0</delta>
@@ -1754,7 +1754,7 @@
                             <name>Environment</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1768,7 +1768,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>0</_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>phases</units>
                     <delta>0</delta>
@@ -1797,9 +1797,9 @@
                             <name>Input</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1813,7 +1813,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -1842,9 +1842,9 @@
                             <name>Input</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1858,7 +1858,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -1887,9 +1887,9 @@
                             <name>Input</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgInputLineFailCause</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1903,7 +1903,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>0</_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>phases</units>
                     <delta>0</delta>
@@ -1932,9 +1932,9 @@
                             <name>Output</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1948,7 +1948,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -1977,9 +1977,9 @@
                             <name>Output</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -1993,7 +1993,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2022,9 +2022,9 @@
                             <name>Output</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2038,7 +2038,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2067,9 +2067,9 @@
                             <name>Output</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2083,7 +2083,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2112,9 +2112,9 @@
                             <name>Output</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2128,7 +2128,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2157,9 +2157,9 @@
                             <name>Output</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2173,7 +2173,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2202,9 +2202,9 @@
                             <name>Output</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2218,7 +2218,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2247,9 +2247,9 @@
                             <name>Output</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2263,7 +2263,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2292,9 +2292,9 @@
                             <name>Output</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2308,7 +2308,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2337,9 +2337,9 @@
                             <name>Output</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2353,7 +2353,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>3</_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2382,9 +2382,9 @@
                             <name>Output</name>
                         </application>
                     </applications>
-                    <>
+                    <valuemap>
                         <name>upsmgStatusYesNo</name>
-                    </>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2398,7 +2398,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>4</_type>
+                    <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2427,7 +2427,7 @@
                             <name>System</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2441,7 +2441,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>4</_type>
+                    <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2470,7 +2470,7 @@
                             <name>System</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2484,7 +2484,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>4</_type>
+                    <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2513,7 +2513,7 @@
                             <name>System</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2527,7 +2527,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>4</_type>
+                    <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2556,7 +2556,7 @@
                             <name>System</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2570,7 +2570,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>4</_type>
+                    <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2599,7 +2599,7 @@
                             <name>System</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2613,7 +2613,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>4</_type>
+                    <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2642,7 +2642,7 @@
                             <name>System</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2656,7 +2656,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>4</_type>
+                    <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2685,7 +2685,7 @@
                             <name>System</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2699,7 +2699,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>4</_type>
+                    <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2728,7 +2728,7 @@
                             <name>System</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -2742,7 +2742,7 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <_type>4</_type>
+                    <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -2771,7 +2771,7 @@
                             <name>System</name>
                         </application>
                     </applications>
-                    </>
+                    <valuemap/>
                     <logtimefmt/>
                 </item>
             </items>
@@ -2820,7 +2820,7 @@
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
-                            <_type>0</_type>
+                            <value_type>0</value_type>
                             <allowed_hosts/>
                             <units/>
                             <delta>0</delta>
@@ -2849,9 +2849,9 @@
                                     <name>Environment</name>
                                 </application>
                             </applications>
-                            <>
+                            <valuemap>
                                 <name>upsmgStatusYesNo</name>
-                            </>
+                            </valuemap>
                             <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
@@ -2865,7 +2865,7 @@
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
-                            <_type>3</_type>
+                            <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>%</units>
                             <delta>0</delta>
@@ -2894,9 +2894,9 @@
                                     <name>Environment</name>
                                 </application>
                             </applications>
-                            <>
+                            <valuemap>
                                 <name>upsmgStatusYesNo</name>
-                            </>
+                            </valuemap>
                             <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
@@ -2910,7 +2910,7 @@
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
-                            <_type>3</_type>
+                            <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>C</units>
                             <delta>0</delta>
@@ -2939,9 +2939,9 @@
                                     <name>Environment</name>
                                 </application>
                             </applications>
-                            <>
+                            <valuemap>
                                 <name>upsmgStatusYesNo</name>
-                            </>
+                            </valuemap>
                             <logtimefmt/>
                         </item_prototype>
                     </item_prototypes>
@@ -3058,7 +3058,7 @@
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
-                            <_type>3</_type>
+                            <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>A</units>
                             <delta>0</delta>
@@ -3087,7 +3087,7 @@
                                     <name>Input</name>
                                 </application>
                             </applications>
-                            </>
+                            <valuemap/>
                             <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
@@ -3101,7 +3101,7 @@
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
-                            <_type>3</_type>
+                            <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>Hz</units>
                             <delta>0</delta>
@@ -3130,7 +3130,7 @@
                                     <name>Input</name>
                                 </application>
                             </applications>
-                            </>
+                            <valuemap/>
                             <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
@@ -3144,7 +3144,7 @@
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
-                            <_type>3</_type>
+                            <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>V</units>
                             <delta>0</delta>
@@ -3173,7 +3173,7 @@
                                     <name>Input</name>
                                 </application>
                             </applications>
-                            </>
+                            <valuemap/>
                             <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
@@ -3187,7 +3187,7 @@
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
-                            <_type>3</_type>
+                            <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>V</units>
                             <delta>0</delta>
@@ -3216,7 +3216,7 @@
                                     <name>Input</name>
                                 </application>
                             </applications>
-                            </>
+                            <valuemap/>
                             <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
@@ -3230,7 +3230,7 @@
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
-                            <_type>3</_type>
+                            <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>V</units>
                             <delta>0</delta>
@@ -3259,14 +3259,14 @@
                                     <name>Input</name>
                                 </application>
                             </applications>
-                            </>
+                            <valuemap/>
                             <logtimefmt/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.6.2.1.2.[{#SNMPINDEX}].last()}&lt;177 or {ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.6.2.1.2.[{#SNMPINDEX}].last()}&gt;250</expression>
-                            <name>Input - Phase {#SNMPINDEX} Voltage not in limits 177-250 V ({ITEM.1})</name>
+                            <name>Input - Phase {#SNMPINDEX} Voltage not in limits 177-250 V ({ITEM.VALUE1})</name>
                             <url/>
                             <status>0</status>
                             <priority>5</priority>
@@ -3418,7 +3418,7 @@
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
-                            <_type>3</_type>
+                            <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>A</units>
                             <delta>0</delta>
@@ -3447,7 +3447,7 @@
                                     <name>Output</name>
                                 </application>
                             </applications>
-                            </>
+                            <valuemap/>
                             <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
@@ -3461,7 +3461,7 @@
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
-                            <_type>3</_type>
+                            <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>Hz</units>
                             <delta>0</delta>
@@ -3490,7 +3490,7 @@
                                     <name>Output</name>
                                 </application>
                             </applications>
-                            </>
+                            <valuemap/>
                             <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
@@ -3504,7 +3504,7 @@
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
-                            <_type>3</_type>
+                            <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>%</units>
                             <delta>0</delta>
@@ -3533,7 +3533,7 @@
                                     <name>Output</name>
                                 </application>
                             </applications>
-                            </>
+                            <valuemap/>
                             <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
@@ -3547,7 +3547,7 @@
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
-                            <_type>3</_type>
+                            <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>V</units>
                             <delta>0</delta>
@@ -3576,7 +3576,7 @@
                                     <name>Output</name>
                                 </application>
                             </applications>
-                            </>
+                            <valuemap/>
                             <logtimefmt/>
                         </item_prototype>
                     </item_prototypes>
@@ -3715,14 +3715,18 @@
                 </discovery_rule>
             </discovery_rules>
             <macros/>
-            <templates/>
+            <templates>
+                <template>
+                    <name>AUS ICMP Ping - Standard</name>
+                </template>
+            </templates>
             <screens/>
         </template>
     </templates>
     <triggers>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.10.0.last(0)}=1</expression>
-            <name>Battery - NO battery ({ITEM.1})</name>
+            <name>Battery - NO battery ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -3732,7 +3736,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.13.0.last(0)}=1</expression>
-            <name>Battery - Non High Charge ({ITEM.1})</name>
+            <name>Battery - Non High Charge ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -3742,7 +3746,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.15.0.last(0)}=1</expression>
-            <name>Battery - Not charging ({ITEM.1})</name>
+            <name>Battery - Not charging ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -3752,7 +3756,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.17.0.last(0)}=1</expression>
-            <name>Battery - Not Recharged ({ITEM.1})</name>
+            <name>Battery - Not Recharged ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -3762,7 +3766,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.12.0.last(0)}=1</expression>
-            <name>Battery - Status Unavailable ({ITEM.1})</name>
+            <name>Battery - Status Unavailable ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -3772,7 +3776,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.9.0.last(0)}=1</expression>
-            <name>Battery FAULT ({ITEM.1})</name>
+            <name>Battery FAULT ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -3782,7 +3786,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.2.0.last(0)}&lt;50</expression>
-            <name>Battery Level &lt;50% ({ITEM.1})</name>
+            <name>Battery Level &lt;50% ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>2</priority>
@@ -3792,7 +3796,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.14.0.last(0)}=1</expression>
-            <name>Battery Low ({ITEM.1})</name>
+            <name>Battery Low ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -3802,7 +3806,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.11.0.last(0)}=1</expression>
-            <name>Battery Needs to be replaced ({ITEM.1})</name>
+            <name>Battery Needs to be replaced ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -3812,7 +3816,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.1.0.last(0)}&lt;5m</expression>
-            <name>Battery Runtime &lt;5min ({ITEM.1})</name>
+            <name>Battery Runtime &lt;5min ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -3822,7 +3826,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.1.0.last(0)}&lt;15m</expression>
-            <name>Battery Runtime &lt;15min ({ITEM.1})</name>
+            <name>Battery Runtime &lt;15min ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -3832,7 +3836,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.6.3.0.last(0)}=1</expression>
-            <name>Input - Bad Voltage/Frequency {ITEM.1}</name>
+            <name>Input - Bad Voltage/Frequency {ITEM.VALUE1}</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -3840,14 +3844,14 @@
             <type>0</type>
             <dependencies>
                 <dependency>
-                    <name>Input - Cause of Input Line Fail {ITEM.1}</name>
+                    <name>Input - Cause of Input Line Fail {ITEM.VALUE1}</name>
                     <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.6.4.0.last(0)}&gt;1</expression>
                 </dependency>
             </dependencies>
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.6.4.0.last(0)}&gt;1</expression>
-            <name>Input - Cause of Input Line Fail {ITEM.1}</name>
+            <name>Input - Cause of Input Line Fail {ITEM.VALUE1}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -3855,14 +3859,14 @@
             <type>0</type>
             <dependencies>
                 <dependency>
-                    <name>Output - Utility Off({ITEM.1})</name>
+                    <name>Output - Utility Off({ITEM.VALUE1})</name>
                     <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.7.0.last(0)}=1</expression>
                 </dependency>
             </dependencies>
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.5.0.last(0)}=1</expression>
-            <name>Output - Bypass Unavailable ({ITEM.1})</name>
+            <name>Output - Bypass Unavailable ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -3872,7 +3876,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.9.0.last(0)}=1</expression>
-            <name>Output - Inverter Off ({ITEM.1})</name>
+            <name>Output - Inverter Off ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -3882,7 +3886,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.6.0.last(0)}=1</expression>
-            <name>Output - No Bypass Installed ({ITEM.1})</name>
+            <name>Output - No Bypass Installed ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -3892,7 +3896,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.3.0.last(0)}=1</expression>
-            <name>Output - On Battery ({ITEM.1})</name>
+            <name>Output - On Battery ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -3902,7 +3906,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.8.0.last(0)}=1</expression>
-            <name>Output - On Boost ({ITEM.1})</name>
+            <name>Output - On Boost ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -3912,7 +3916,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.4.0.last(0)}=1</expression>
-            <name>Output - On Bypass ({ITEM.1})</name>
+            <name>Output - On Bypass ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -3922,7 +3926,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.12.0.last(0)}=1</expression>
-            <name>Output - On Fader (on buck) ({ITEM.1})</name>
+            <name>Output - On Fader (on buck) ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -3932,7 +3936,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.10.0.last(0)}=1</expression>
-            <name>Output - Over Load ({ITEM.1})</name>
+            <name>Output - Over Load ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -3942,7 +3946,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.11.0.last(0)}=1</expression>
-            <name>Output - Over Temperature ({ITEM.1})</name>
+            <name>Output - Over Temperature ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -3952,7 +3956,7 @@
         </trigger>
         <trigger>
             <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.7.0.last(0)}=1</expression>
-            <name>Output - Utility Off({ITEM.1})</name>
+            <name>Output - Utility Off({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
