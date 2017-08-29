@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2017-08-28T06:16:09Z</date>
+    <date>2017-08-29T00:22:58Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -244,7 +244,7 @@ Only pulses longer than sampling interval are counted.</description>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template DIDO Damocles:inpValue[{#SNMPINDEX}].diff(0)}=1</expression>
+                            <expression>{ZBX-HWG-DAMOCLES:inpValue[{#SNMPINDEX}].diff(0)}=1</expression>
                             <name>{#SNMPVALUE} input status was changed on {HOST.NAME}</name>
                             <url/>
                             <status>0</status>
@@ -253,7 +253,7 @@ Only pulses longer than sampling interval are counted.</description>
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template DIDO Damocles:inpAlarmState[{#SNMPINDEX}].last()}=1</expression>
+                            <expression>{ZBX-HWG-DAMOCLES:inpAlarmState[{#SNMPINDEX}].last()}=1</expression>
                             <name>{HOST.NAME} {#SNMPVALUE} Alarm</name>
                             <url/>
                             <status>0</status>
@@ -524,7 +524,7 @@ Only pulses longer than sampling interval are counted.</description>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template DIDO Damocles:outInit[{#SNMPINDEX}].diff(0)}=1</expression>
+                            <expression>{ZBX-HWG-DAMOCLES:outInit[{#SNMPINDEX}].diff(0)}=1</expression>
                             <name>{#SNMPVALUE} output default state was changed on {HOST.NAME}</name>
                             <url/>
                             <status>0</status>
@@ -533,7 +533,7 @@ Only pulses longer than sampling interval are counted.</description>
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template DIDO Damocles:outValue[{#SNMPVALUE}].diff(0)}=1</expression>
+                            <expression>{ZBX-HWG-DAMOCLES:outValue[{#SNMPVALUE}].diff(0)}=1</expression>
                             <name>{#SNMPVALUE} output status was changed on {HOST.NAME}</name>
                             <url/>
                             <status>0</status>
