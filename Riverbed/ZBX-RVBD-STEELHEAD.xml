@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2016-02-08T11:25:09Z</date>
+    <date>2017-08-29T00:23:04Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -1522,13 +1522,23 @@
                     <host_prototypes/>
                 </discovery_rule>
             </discovery_rules>
-            <s>
-                <>
-                    <>{$SNMP_COMMUNITY}</>
+            <macros>
+                <macro>
+                    <macro>{$SNMP_COMMUNITY}</macro>
                     <value>R5m76AFww5</value>
-                </>
-            </s>
-            <templates/>
+                </macro>
+            </macros>
+            <templates>
+                <template>
+                    <name>AUS ICMP Ping - Standard</name>
+                </template>
+                <template>
+                    <name>Template SNMP Generic</name>
+                </template>
+                <template>
+                    <name>Template SNMP Interfaces</name>
+                </template>
+            </templates>
             <screens/>
         </template>
     </templates>
