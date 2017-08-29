@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2017-08-29T00:16:12Z</date>
+    <date>2017-08-29T00:23:01Z</date>
     <groups>
+        <group>
+            <name>Infrastructure</name>
+        </group>
         <group>
             <name>Templates</name>
         </group>
@@ -13,6 +16,9 @@
             <name>ZBX-LIEBERT-CRAC</name>
             <description/>
             <groups>
+                <group>
+                    <name>Infrastructure</name>
+                </group>
                 <group>
                     <name>Templates</name>
                 </group>
@@ -4099,7 +4105,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template CRAC Liebert:lgpEnvStateAudibleAlarm.last(0)}=1</expression>
+            <expression>{ZBX-LIEBERT-CRAC:lgpEnvStateAudibleAlarm.last(0)}=1</expression>
             <name>{HOST.NAME} Audible Alarm Output is ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -4109,7 +4115,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template CRAC Liebert:lgpEnvStateGeneralAlarmOutput.last(0)}=1</expression>
+            <expression>{ZBX-LIEBERT-CRAC:lgpEnvStateGeneralAlarmOutput.last(0)}=1</expression>
             <name>{HOST.NAME} General Alarm Output is ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -4119,7 +4125,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template CRAC Liebert:lgpEnvHumidityHighThresholdRel.last(0)}&lt;{Template CRAC Liebert:lgpEnvHumidityMeasurementRel.last(1m)}</expression>
+            <expression>{ZBX-LIEBERT-CRAC:lgpEnvHumidityHighThresholdRel.last(0)}&lt;{ZBX-LIEBERT-CRAC:lgpEnvHumidityMeasurementRel.last(1m)}</expression>
             <name>{HOST.NAME} High Humidity Alarm: ({ITEM.VALUE2})</name>
             <url/>
             <status>0</status>
@@ -4129,12 +4135,12 @@
             <dependencies>
                 <dependency>
                     <name>{HOST.NAME} power changed to {ITEM.VALUE1}</name>
-                    <expression>{Template CRAC Liebert:lgpEnvStateSystem.diff(0)}&gt;0</expression>
+                    <expression>{ZBX-LIEBERT-CRAC:lgpEnvStateSystem.diff(0)}&gt;0</expression>
                 </dependency>
             </dependencies>
         </trigger>
         <trigger>
-            <expression>{Template CRAC Liebert:lgpEnvTemperatureHighThresholdDegC.last(0)}&lt;{Template CRAC Liebert:lgpEnvControlTemperatureMeasurementDegC.last(1m)}</expression>
+            <expression>{ZBX-LIEBERT-CRAC:lgpEnvTemperatureHighThresholdDegC.last(0)}&lt;{ZBX-LIEBERT-CRAC:lgpEnvControlTemperatureMeasurementDegC.last(1m)}</expression>
             <name>{HOST.NAME} High Temperature Alarm: ({ITEM.VALUE2})</name>
             <url/>
             <status>0</status>
@@ -4144,12 +4150,12 @@
             <dependencies>
                 <dependency>
                     <name>{HOST.NAME} power changed to {ITEM.VALUE1}</name>
-                    <expression>{Template CRAC Liebert:lgpEnvStateSystem.diff(0)}&gt;0</expression>
+                    <expression>{ZBX-LIEBERT-CRAC:lgpEnvStateSystem.diff(0)}&gt;0</expression>
                 </dependency>
             </dependencies>
         </trigger>
         <trigger>
-            <expression>{Template CRAC Liebert:lgpEnvHumidityLowThresholdRel.last(0)}&gt;{Template CRAC Liebert:lgpEnvHumidityMeasurementRel.last(1m)}</expression>
+            <expression>{ZBX-LIEBERT-CRAC:lgpEnvHumidityLowThresholdRel.last(0)}&gt;{ZBX-LIEBERT-CRAC:lgpEnvHumidityMeasurementRel.last(1m)}</expression>
             <name>{HOST.NAME} Low Humidity Alarm: ({ITEM.VALUE2})</name>
             <url/>
             <status>0</status>
@@ -4159,12 +4165,12 @@
             <dependencies>
                 <dependency>
                     <name>{HOST.NAME} power changed to {ITEM.VALUE1}</name>
-                    <expression>{Template CRAC Liebert:lgpEnvStateSystem.diff(0)}&gt;0</expression>
+                    <expression>{ZBX-LIEBERT-CRAC:lgpEnvStateSystem.diff(0)}&gt;0</expression>
                 </dependency>
             </dependencies>
         </trigger>
         <trigger>
-            <expression>{Template CRAC Liebert:lgpEnvTemperatureLowThresholdDegC.last(0)}&gt;{Template CRAC Liebert:lgpEnvControlTemperatureMeasurementDegC.last(1m)}</expression>
+            <expression>{ZBX-LIEBERT-CRAC:lgpEnvTemperatureLowThresholdDegC.last(0)}&gt;{ZBX-LIEBERT-CRAC:lgpEnvControlTemperatureMeasurementDegC.last(1m)}</expression>
             <name>{HOST.NAME} Low Temperature Alarm: ({ITEM.VALUE2})</name>
             <url/>
             <status>0</status>
@@ -4174,12 +4180,12 @@
             <dependencies>
                 <dependency>
                     <name>{HOST.NAME} power changed to {ITEM.VALUE1}</name>
-                    <expression>{Template CRAC Liebert:lgpEnvStateSystem.diff(0)}&gt;0</expression>
+                    <expression>{ZBX-LIEBERT-CRAC:lgpEnvStateSystem.diff(0)}&gt;0</expression>
                 </dependency>
             </dependencies>
         </trigger>
         <trigger>
-            <expression>{Template CRAC Liebert:lgpEnvStateSystem.diff(0)}&gt;0</expression>
+            <expression>{ZBX-LIEBERT-CRAC:lgpEnvStateSystem.diff(0)}&gt;0</expression>
             <name>{HOST.NAME} power changed to {ITEM.VALUE1}</name>
             <url/>
             <status>0</status>
@@ -4189,7 +4195,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template CRAC Liebert:lgpEnvStateSystem.last(0)}=2 and {Template CRAC Liebert:lgpEnvStateOperatingReason.last(0)}=3</expression>
+            <expression>{ZBX-LIEBERT-CRAC:lgpEnvStateSystem.last(0)}=2 and {ZBX-LIEBERT-CRAC:lgpEnvStateOperatingReason.last(0)}=3</expression>
             <name>{HOST.NAME} status changed to {ITEM.VALUE1} due to {ITEM.VALUE2}</name>
             <url/>
             <status>0</status>
@@ -4226,7 +4232,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template CRAC Liebert</host>
+                        <host>ZBX-LIEBERT-CRAC</host>
                         <key>lgpEnvHumidityHighThresholdRel</key>
                     </item>
                 </graph_item>
@@ -4238,7 +4244,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template CRAC Liebert</host>
+                        <host>ZBX-LIEBERT-CRAC</host>
                         <key>lgpEnvHumidityLowThresholdRel</key>
                     </item>
                 </graph_item>
@@ -4250,7 +4256,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template CRAC Liebert</host>
+                        <host>ZBX-LIEBERT-CRAC</host>
                         <key>lgpEnvHumidityMeasurementRel</key>
                     </item>
                 </graph_item>
@@ -4262,7 +4268,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template CRAC Liebert</host>
+                        <host>ZBX-LIEBERT-CRAC</host>
                         <key>1.3.6.1.4.1.476.1.42.3.4.2.2.1.0</key>
                     </item>
                 </graph_item>
@@ -4294,7 +4300,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template CRAC Liebert</host>
+                        <host>ZBX-LIEBERT-CRAC</host>
                         <key>lgpEnvControlTemperatureMeasurementDegC</key>
                     </item>
                 </graph_item>
@@ -4306,7 +4312,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template CRAC Liebert</host>
+                        <host>ZBX-LIEBERT-CRAC</host>
                         <key>lgpEnvTemperatureSettingDegC</key>
                     </item>
                 </graph_item>
@@ -4318,7 +4324,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template CRAC Liebert</host>
+                        <host>ZBX-LIEBERT-CRAC</host>
                         <key>lgpEnvTemperatureHighThresholdDegC</key>
                     </item>
                 </graph_item>
@@ -4330,7 +4336,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template CRAC Liebert</host>
+                        <host>ZBX-LIEBERT-CRAC</host>
                         <key>lgpEnvTemperatureLowThresholdDegC</key>
                     </item>
                 </graph_item>
