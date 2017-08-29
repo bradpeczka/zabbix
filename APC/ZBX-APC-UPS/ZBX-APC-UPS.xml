@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2016-02-08T11:25:15Z</date>
+    <date>2017-08-29T00:22:44Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -4709,7 +4709,11 @@
                 </discovery_rule>
             </discovery_rules>
             <macros/>
-            <templates/>
+            <templates>
+                <template>
+                    <name>AUS ICMP Ping - Standard</name>
+                </template>
+            </templates>
             <screens/>
         </template>
     </templates>
