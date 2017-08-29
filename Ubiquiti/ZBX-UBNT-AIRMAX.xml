@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-12-22T10:49:23Z</date>
+    <date>2017-08-29T00:23:08Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template Ubiquiti airMAX</template>
-            <name>Template Ubiquiti airMAX</name>
+            <template>ZBX-UBNT-AIRMAX</template>
+            <name>ZBX-UBNT-AIRMAX</name>
             <description/>
             <groups>
                 <group>
@@ -316,7 +316,7 @@
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Template Ubiquiti airMAX</host>
+                                        <host>ZBX-UBNT-AIRMAX</host>
                                         <key>ubntAirMaxCapacity[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
@@ -328,7 +328,7 @@
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Template Ubiquiti airMAX</host>
+                                        <host>ZBX-UBNT-AIRMAX</host>
                                         <key>ubntAirMaxQuality[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
@@ -1621,7 +1621,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template Ubiquiti airMAX:ubntWlStatCcq[{#SNMPVALUE}].last(0)}&lt;85</expression>
+                            <expression>{ZBX-UBNT-AIRMAX:ubntWlStatCcq[{#SNMPVALUE}].last(0)}&lt;85</expression>
                             <name>{HOSTNAME} Low CCQ {ITEM.LASTVALUE}</name>
                             <url/>
                             <status>0</status>
@@ -1635,7 +1635,17 @@
                 </discovery_rule>
             </discovery_rules>
             <macros/>
-            <templates/>
+            <templates>
+                <template>
+                    <name>AUS ICMP Ping - Standard</name>
+                </template>
+                <template>
+                    <name>Template SNMPv1 Generic</name>
+                </template>
+                <template>
+                    <name>Template SNMPv1 Interfaces</name>
+                </template>
+            </templates>
             <screens/>
         </template>
     </templates>
