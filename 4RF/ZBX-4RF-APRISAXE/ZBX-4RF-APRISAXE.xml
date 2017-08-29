@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-12-22T10:45:59Z</date>
+    <date>2017-08-29T00:22:34Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template 4RF AprisaXE</template>
-            <name>Template 4RF AprisaXE</name>
+            <template>ZBX-4RF-APRISAXE</template>
+            <name>ZBX-4RF-APRISAXE</name>
             <description/>
             <groups>
                 <group>
@@ -3587,13 +3587,26 @@
                     <value>1</value>
                 </macro>
             </macros>
-            <templates/>
+            <templates>
+                <template>
+                    <name>AUS ICMP Ping - Standard</name>
+                </template>
+                <template>
+                    <name>Template SNMP Generic</name>
+                </template>
+                <template>
+                    <name>Template SNMP Interfaces</name>
+                </template>
+                <template>
+                    <name>ZBX-4RF-COMMON</name>
+                </template>
+            </templates>
             <screens/>
         </template>
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template 4RF AprisaXE:aprisaXEFan1Status.last(1m)} &gt; 1</expression>
+            <expression>{ZBX-4RF-APRISAXE:aprisaXEFan1Status.last(1m)} &gt; 1</expression>
             <name>Fan #1 failed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3603,7 +3616,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template 4RF AprisaXE:aprisaXEFan2Status.last(1m)} &gt; 1</expression>
+            <expression>{ZBX-4RF-APRISAXE:aprisaXEFan2Status.last(1m)} &gt; 1</expression>
             <name>Fan #2 failed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3613,7 +3626,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template 4RF AprisaXE:aprisaXEModemMuteState.last(1m)}=1</expression>
+            <expression>{ZBX-4RF-APRISAXE:aprisaXEModemMuteState.last(1m)}=1</expression>
             <name>Modem Mute [{ITEM.VALUE}] on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3623,7 +3636,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template 4RF AprisaXE:aprisaXEMotherboardSerialNumber.diff(0)}&gt;0</expression>
+            <expression>{ZBX-4RF-APRISAXE:aprisaXEMotherboardSerialNumber.diff(0)}&gt;0</expression>
             <name>Motherboard serial number changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3633,7 +3646,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template 4RF AprisaXE:aprisaXETerminalRSSI.max(5m)} &lt; -80</expression>
+            <expression>{ZBX-4RF-APRISAXE:aprisaXETerminalRSSI.max(5m)} &lt; -80</expression>
             <name>NETWORK: RSSI is too high on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3643,7 +3656,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template 4RF AprisaXE:aprisaXEModemSNR.min(5m)} &lt; 15</expression>
+            <expression>{ZBX-4RF-APRISAXE:aprisaXEModemSNR.min(5m)} &lt; 15</expression>
             <name>NETWORK: SNR is too low on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3653,7 +3666,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template 4RF AprisaXE:sysUpTime.last(0)}&lt;600</expression>
+            <expression>{ZBX-4RF-APRISAXE:sysUpTime.last(0)}&lt;600</expression>
             <name>NETWORK: {HOSTNAME} has just been restarted</name>
             <url/>
             <status>0</status>
@@ -3663,7 +3676,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template 4RF AprisaXE:aprisaXEReceiverSerialNumber.diff(0)}&gt;0</expression>
+            <expression>{ZBX-4RF-APRISAXE:aprisaXEReceiverSerialNumber.diff(0)}&gt;0</expression>
             <name>Receiver serial number changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3673,7 +3686,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template 4RF AprisaXE:aprisaXETerminalAlarmStatus.last(1m)}=5</expression>
+            <expression>{ZBX-4RF-APRISAXE:aprisaXETerminalAlarmStatus.last(1m)}=5</expression>
             <name>Terminal Status changed to CRITICAL</name>
             <url/>
             <status>0</status>
@@ -3683,7 +3696,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template 4RF AprisaXE:aprisaXETerminalAlarmStatus.last(1m)}=4</expression>
+            <expression>{ZBX-4RF-APRISAXE:aprisaXETerminalAlarmStatus.last(1m)}=4</expression>
             <name>Terminal Status changed to MAJOR ALARM</name>
             <url/>
             <status>0</status>
@@ -3693,7 +3706,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template 4RF AprisaXE:aprisaXETerminalAlarmStatus.last(1m)}=3</expression>
+            <expression>{ZBX-4RF-APRISAXE:aprisaXETerminalAlarmStatus.last(1m)}=3</expression>
             <name>Terminal Status changed to MINOR ALARM</name>
             <url/>
             <status>0</status>
@@ -3703,7 +3716,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template 4RF AprisaXE:aprisaXETransmitterSerialNumber.diff(0)}&gt;0</expression>
+            <expression>{ZBX-4RF-APRISAXE:aprisaXETransmitterSerialNumber.diff(0)}&gt;0</expression>
             <name>Transmitter serial number changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -3718,8 +3731,8 @@
             <name>4RF Health Statistics</name>
             <width>900</width>
             <height>200</height>
-            <yaxismin>-100.0000</yaxismin>
-            <yaxismax>100.0000</yaxismax>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>5.0000</yaxismax>
             <show_work_period>1</show_work_period>
             <show_triggers>1</show_triggers>
             <type>0</type>
@@ -3733,39 +3746,139 @@
             <ymax_item_1>0</ymax_item_1>
             <graph_items>
                 <graph_item>
-                    <sortorder>2</sortorder>
+                    <sortorder>0</sortorder>
                     <drawtype>0</drawtype>
                     <color>0000C8</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template 4RF AprisaXE</host>
+                        <host>ZBX-4RF-APRISAXE</host>
                         <key>aprisaXEFan1Status</key>
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>3</sortorder>
+                    <sortorder>1</sortorder>
                     <drawtype>0</drawtype>
                     <color>C800C8</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template 4RF AprisaXE</host>
+                        <host>ZBX-4RF-APRISAXE</host>
                         <key>aprisaXEFan2Status</key>
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>4</sortorder>
+                    <sortorder>2</sortorder>
                     <drawtype>0</drawtype>
                     <color>00C8C8</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template 4RF AprisaXE</host>
+                        <host>ZBX-4RF-APRISAXE</host>
                         <key>aprisaXETerminalAlarmStatus</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>RSSI/SNR</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>0</ymin_type_1>
+            <ymax_type_1>0</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>00C800</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>ZBX-4RF-APRISAXE</host>
+                        <key>aprisaXEModemSNR</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>C80000</color>
+                    <yaxisside>1</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>ZBX-4RF-APRISAXE</host>
+                        <key>aprisaXEReceiverRSSI</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>0000C8</color>
+                    <yaxisside>1</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>ZBX-4RF-APRISAXE</host>
+                        <key>aprisaXETerminalRSSI</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Temperature</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>0</ymin_type_1>
+            <ymax_type_1>0</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>00C800</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>ZBX-4RF-APRISAXE</host>
+                        <key>aprisaXEReceiverTemperature</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>C80000</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>ZBX-4RF-APRISAXE</host>
+                        <key>aprisaXETransmitterTemperature</key>
                     </item>
                 </graph_item>
             </graph_items>
