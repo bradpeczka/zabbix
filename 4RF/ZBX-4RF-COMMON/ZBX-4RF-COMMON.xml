@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-12-22T10:46:06Z</date>
+    <date>2017-08-29T00:22:37Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template 4RF Common</template>
-            <name>Template 4RF Common</name>
+            <template>ZBX-4RF-COMMON</template>
+            <name>ZBX-4RF-COMMON</name>
             <description/>
             <groups>
                 <group>
@@ -421,7 +421,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template 4RF Common:fourRFSystemLastReset.last(1m)}=3</expression>
+            <expression>{ZBX-4RF-COMMON:fourRFSystemLastReset.last(1m)}=3</expression>
             <name>Hardware watchdog has just rebooted {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -431,7 +431,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template 4RF Common:fourRFSystemSoftwareVersion.diff(0)}&gt;0</expression>
+            <expression>{ZBX-4RF-COMMON:fourRFSystemSoftwareVersion.diff(0)}&gt;0</expression>
             <name>Software version changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -441,7 +441,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template 4RF Common:fourRFSystemSerialNumber.diff(0)}&gt;0</expression>
+            <expression>{ZBX-4RF-COMMON:fourRFSystemSerialNumber.diff(0)}&gt;0</expression>
             <name>System serial number changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
