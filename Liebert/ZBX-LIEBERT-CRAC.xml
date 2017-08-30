@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2017-08-29T00:23:01Z</date>
+    <date>2017-08-30T06:07:52Z</date>
     <groups>
         <group>
             <name>Infrastructure</name>
@@ -31,6 +31,9 @@
                     <name>Configuration</name>
                 </application>
                 <application>
+                    <name>Flexible Modules</name>
+                </application>
+                <application>
                     <name>Humidity</name>
                 </application>
                 <application>
@@ -50,8 +53,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.2.1.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.2.1.3.0</key>
-                    <delay>60</delay>
+                    <key>lgpAgentIdentFirmwareVersion</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -93,8 +96,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.2.1.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.2.1.1.0</key>
-                    <delay>60</delay>
+                    <key>lgpAgentIdentManufacturer</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -136,8 +139,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.2.1.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.2.1.2.0</key>
-                    <delay>60</delay>
+                    <key>lgpAgentIdentModel</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -179,8 +182,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.2.1.5.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.2.1.5.0</key>
-                    <delay>60</delay>
+                    <key>lgpAgentIdentPartNumber</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -222,8 +225,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.2.1.4.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.2.1.4.0</key>
-                    <delay>60</delay>
+                    <key>lgpAgentIdentSerialNumber</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -265,7 +268,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.25.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.25.0</key>
+                    <key>lgpEnvConfigAutoConfiguration</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -310,7 +313,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.36.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.36.0</key>
+                    <key>lgpEnvConfigBmsResetTimer</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -353,7 +356,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.39.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.39.0</key>
+                    <key>lgpEnvConfigCabinetSensorAlarms</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -398,7 +401,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.27.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.27.0</key>
+                    <key>lgpEnvConfigChillWaterControl</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -443,7 +446,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.30.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.30.0</key>
+                    <key>lgpEnvConfigCompressorLockout</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -488,7 +491,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.8.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.8.0</key>
+                    <key>lgpEnvConfigCoolingServiceInterval</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -531,7 +534,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.35.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.35.0</key>
+                    <key>lgpEnvConfigFanSpeedCapacity</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -574,7 +577,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.34.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.34.0</key>
+                    <key>lgpEnvConfigFanSpeedMode</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -619,7 +622,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.10.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.10.0</key>
+                    <key>lgpEnvConfigFilterServiceInterval</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -662,7 +665,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.2.0</key>
+                    <key>lgpEnvConfigHumLockout</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -707,7 +710,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.9.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.9.0</key>
+                    <key>lgpEnvConfigHumidifierServiceInterval</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -750,7 +753,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.29.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.29.0</key>
+                    <key>lgpEnvConfigHumidityControl</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -795,7 +798,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.28.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.28.0</key>
+                    <key>lgpEnvConfigInfaredFlushRate</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -838,7 +841,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.16.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.16.0</key>
+                    <key>lgpEnvConfigLocalTemperatureUnit</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -883,7 +886,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.31.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.31.0</key>
+                    <key>lgpEnvConfigReheatAndHumidifierLockout</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -928,7 +931,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.1.0</key>
+                    <key>lgpEnvConfigReheatLockout</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -973,7 +976,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.7.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.7.0</key>
+                    <key>lgpEnvConfigRemoteShutdown</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1018,7 +1021,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.4.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.4.0</key>
+                    <key>lgpEnvConfigRestartDelay</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1061,7 +1064,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.23.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.23.0</key>
+                    <key>lgpEnvConfigSensorEvents1</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1106,7 +1109,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.37.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.37.0</key>
+                    <key>lgpEnvConfigDisableSensorOffsetDegC</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1149,7 +1152,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.17.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.17.0</key>
+                    <key>lgpEnvConfigSleepMode</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1194,7 +1197,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.24.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.24.0</key>
+                    <key>lgpEnvConfigSleepModeDeadbandRangeDegC</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1239,7 +1242,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.22.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.22.0</key>
+                    <key>lgpEnvConfigSensorEventsStandard</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1284,7 +1287,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.21.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.21.0</key>
+                    <key>lgpEnvConfigSupplyTempLowLimit</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1329,7 +1332,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.14.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.14.0</key>
+                    <key>lgpEnvConfigSupplyTempLowLimitDegC</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1372,7 +1375,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.4.33.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.4.33.0</key>
+                    <key>lgpEnvConfigTempControlAlgorithm</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1546,7 +1549,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.2.2.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.2.2.1.0</key>
+                    <key>lgpEnvHumiditySettingRel</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1589,7 +1592,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.2.2.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.2.2.2.0</key>
+                    <key>lgpEnvHumidityToleranceRel</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1632,8 +1635,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.1.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsComp1RunHr</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1675,8 +1678,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.2.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsComp2RunHr</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1718,8 +1721,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.17.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.17.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsComp3RunHr</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1761,8 +1764,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.18.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.18.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsComp4RunHr</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1804,8 +1807,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.10.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.10.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsCoolingModeHrs</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1847,8 +1850,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.13.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.13.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsDehumidifyModeHrs</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1890,8 +1893,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.3.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsFanRunHr</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1933,8 +1936,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.16.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.16.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsFreeCoolRunHr</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1976,8 +1979,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.11.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.11.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsHeatingModeHrs</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2019,8 +2022,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.14.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.14.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsHotGasRunHr</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2062,8 +2065,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.15.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.15.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsHotWaterRunHr</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2105,8 +2108,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.4.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.4.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsHumRunHrs</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2148,8 +2151,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.12.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.12.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsHumidifyModeHrs</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2191,8 +2194,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.7.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.7.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsReheat1RunHr</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2234,8 +2237,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.8.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.8.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsReheat2RunHr</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2277,8 +2280,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.6.9.0</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.3.4.6.9.0</key>
-                    <delay>60</delay>
+                    <key>lgpEnvStatisticsReheat3RunHr</key>
+                    <delay>600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3035,8 +3038,51 @@
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
-                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.17.0</snmp_oid>
+                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.16.0</snmp_oid>
                     <key>lgpEnvStateFanCapacity</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>%</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Status</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Status - Utilised Free Cooling Capacity</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.3.17.0</snmp_oid>
+                    <key>lgpEnvStateFreeCoolingCapacity</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -3207,7 +3253,7 @@
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
-                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.4</snmp_oid>
+                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.7</snmp_oid>
                     <key>lgpEnvDigitalScrollCompressor1TemperatureMeasurementDegC</key>
                     <delay>60</delay>
                     <history>90</history>
@@ -3250,7 +3296,7 @@
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
-                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.5</snmp_oid>
+                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.4.1.3.3.1.3.8</snmp_oid>
                     <key>lgpEnvDigitalScrollCompressor2TemperatureMeasurementDegC</key>
                     <delay>60</delay>
                     <history>90</history>
@@ -3549,12 +3595,136 @@
             </items>
             <discovery_rules>
                 <discovery_rule>
+                    <name>Flexible Device Table</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <snmp_oid>1.3.6.1.4.1.476.1.42.3.9.20.1.10.1.2.1</snmp_oid>
+                    <key>lgpFlexibleEntryDataLabel</key>
+                    <delay>600</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
+                    <lifetime>30</lifetime>
+                    <description/>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>$1</name>
+                            <type>4</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.{#SNMPINDEX}</snmp_oid>
+                            <key>lgpFlexibleEntryValue[{#SNMPVALUE}]</key>
+                            <delay>60</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>4</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Flexible Modules</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>$1 Units of Measure</name>
+                            <type>4</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.476.1.42.3.9.20.1.30.1.2.1.{#SNMPINDEX}</snmp_oid>
+                            <key>lgpFlexibleEntryUnitsOfMeasure[{#SNMPVALUE}]</key>
+                            <delay>600</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>4</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Flexible Modules</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes/>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                </discovery_rule>
+                <discovery_rule>
                     <name>Managed Device Table</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.1</snmp_oid>
-                    <key>1.3.6.1.4.1.476.1.42.2.4.2.1.1</key>
-                    <delay>60</delay>
+                    <key>lgpAgentDeviceIndex</key>
+                    <delay>600</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -3587,8 +3757,8 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.5.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.476.1.42.2.4.2.1.5.[{#SNMPINDEX}]</key>
-                            <delay>60</delay>
+                            <key>lgpAgentDeviceFirmwareVersion[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -3626,8 +3796,8 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.3.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.476.1.42.2.4.2.1.3.[{#SNMPINDEX}]</key>
-                            <delay>60</delay>
+                            <key>lgpAgentDeviceManufacturer[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -3665,8 +3835,8 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.8.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.476.1.42.2.4.2.1.8.[{#SNMPINDEX}]</key>
-                            <delay>60</delay>
+                            <key>lgpAgentDeviceManufactureDate[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -3704,8 +3874,8 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.4.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.476.1.42.2.4.2.1.4.[{#SNMPINDEX}]</key>
-                            <delay>60</delay>
+                            <key>lgpAgentDeviceModel[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -3743,8 +3913,8 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.15.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.476.1.42.2.4.2.1.15.[{#SNMPINDEX}]</key>
-                            <delay>60</delay>
+                            <key>lgpAgentDeviceUnitName[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -3782,8 +3952,8 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.7.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.476.1.42.2.4.2.1.7.[{#SNMPINDEX}]</key>
-                            <delay>60</delay>
+                            <key>lgpAgentDeviceSerialNumber[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -3821,8 +3991,8 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.11.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.476.1.42.2.4.2.1.11.[{#SNMPINDEX}]</key>
-                            <delay>60</delay>
+                            <key>lgpAgentDeviceServiceAddrLine1[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -3859,9 +4029,9 @@
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
-                            <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.13.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.476.1.42.2.4.2.1.13.[{#SNMPINDEX}]</key>
-                            <delay>60</delay>
+                            <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.12.{#SNMPINDEX}</snmp_oid>
+                            <key>lgpAgentDeviceServiceAddrLine2[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -3898,9 +4068,9 @@
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
-                            <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.14.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.476.1.42.2.4.2.1.14.[{#SNMPINDEX}]</key>
-                            <delay>60</delay>
+                            <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.13.{#SNMPINDEX}</snmp_oid>
+                            <key>lgpAgentDeviceServiceAddrLine3[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -3937,9 +4107,9 @@
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
-                            <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.12.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.476.1.42.2.4.2.1.12.[{#SNMPINDEX}]</key>
-                            <delay>60</delay>
+                            <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.14.{#SNMPINDEX}</snmp_oid>
+                            <key>lgpAgentDeviceServiceAddrLine4[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -3977,8 +4147,8 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.10.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.476.1.42.2.4.2.1.10.[{#SNMPINDEX}]</key>
-                            <delay>60</delay>
+                            <key>lgpAgentDeviceServicePhoneNumber[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -4016,8 +4186,8 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.16.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.476.1.42.2.4.2.1.16.[{#SNMPINDEX}]</key>
-                            <delay>60</delay>
+                            <key>lgpAgentDeviceSiteIdentifier[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -4055,8 +4225,8 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.476.1.42.2.4.2.1.17.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.476.1.42.2.4.2.1.17.[{#SNMPINDEX}]</key>
-                            <delay>60</delay>
+                            <key>lgpAgentDeviceTagNumber[{#SNMPINDEX}]</key>
+                            <delay>600</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -4269,7 +4439,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-LIEBERT-CRAC</host>
-                        <key>1.3.6.1.4.1.476.1.42.3.4.2.2.1.0</key>
+                        <key>lgpEnvHumiditySettingRel</key>
                     </item>
                 </graph_item>
             </graph_items>
