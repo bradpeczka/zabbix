@@ -162,6 +162,10 @@ Requirements
 
 This template was tested on Zabbix 2.4.6, and will work with UPSes from a varity of brands including: Dell, Eaton, MGE, Merlin Gerin, and Powerware. 
 
+Compatibility has been tested on the following management cards and firmware versions:
+* Eaton SNMP/Web Minislot Network Card, P/N NETWORK-MS, Firmware 'HF'
+* MGE Network Management Card Transverse, P/N 66074, Firmware 'KC'
+
 License
 -------
 
