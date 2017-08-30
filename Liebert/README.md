@@ -37,8 +37,9 @@ Items
   * Config - Supply Temperature Low Limit
   * Config - Supply Temperature Low Setpoint
   * Config - Temperature Control Algorithm
-  * Humidity - Control Measurement
-  * Humidity - Return Air
+  * Humidity - High Threshold
+  * Humidity - Low Threshold
+  * Humidity - Measurement
   * Humidity - Setpoint
   * Humidity - Tolerance
   * Statistics - Compressor #1 Run Time
@@ -79,10 +80,15 @@ Items
   * Temperature - Control Measurement
   * Temperature - Digital Scroll Compressor #1
   * Temperature - Digital Scroll Compressor #2
+  * Temperature - High Threshold
+  * Temperature - Low Threshold
   * Temperature - Return Air
   * Temperature - Setpoint
   * Temperature - Supply Air
   * Temperature - Tolerance
+  * Discovery: Flexible Device - Description
+  * Discovery: Flexible Device - Value
+  * Discovery: Flexible Device - Units of Measure
   * Discovery: Managed Device - FW Version
   * Discovery: Managed Device - Manufacturer
   * Discovery: Managed Device - Manufacturing Date
@@ -171,6 +177,11 @@ Requirements
 ------------
 
 This template was tested on Zabbix 2.4.6.
+
+Compatibility has been tested on the following management cards and firmware versions:
+
+* Libert IntelliSlot Web Card, Firmware v3.210.0
+* Liebert IS-UNITY-DP Communications Card, Firmware v6.1.0.0
 
 License
 -------
