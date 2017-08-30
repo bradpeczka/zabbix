@@ -141,6 +141,14 @@ Requirements
 
 This template was tested on Zabbix 2.4.6, and will work with UPSes from a varity of brands including: Eaton, Exide, Powerware and Sola. 
 
+Compatibility has been tested on the following management cards and firmware versions:
+
+* Eaton ConnectUPS-BD Web/SNMP Card, P/N 116750222, Firmware v4.38
+* Eaton ConnectUPS-MS Web/SNMP Card, P/N 103006826, Firmware v4.38
+* Eaton ConnectUPS-X Web/SNMP Card, P/N 116750221, Firmware v4.38
+* Eaton SNMP/Web Minislot Network Card, P/N NETWORK-MS, Firmware 'HF'
+* Eaton SNMP/Web Minislot Network Card, P/N NETWORK-MS, Firmware 'JC' 
+
 License
 -------
 
