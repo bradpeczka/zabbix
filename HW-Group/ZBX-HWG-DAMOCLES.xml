@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2017-08-29T00:22:58Z</date>
+    <date>2017-09-21T05:24:08Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -64,12 +64,12 @@
                     <description/>
                     <item_prototypes>
                         <item_prototype>
-                            <name>Input $1 Alarm State</name>
+                            <name>$1 Alarm State</name>
                             <type>1</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.21796.3.4.1.1.5.{#SNMPINDEX}</snmp_oid>
-                            <key>inpAlarmState[{#SNMPINDEX}]</key>
+                            <key>inpAlarmState[{#SNMPVALUE}]</key>
                             <delay>30</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -105,6 +105,51 @@
                             </applications>
                             <valuemap>
                                 <name>damoclesInputAlarmState</name>
+                            </valuemap>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>$1 Input State</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.21796.3.4.1.1.2.{#SNMPINDEX}</snmp_oid>
+                            <key>inpValue[{#SNMPVALUE}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>3</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description>The binary input value.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Input</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>damoclesOnOff</name>
                             </valuemap>
                             <logtimefmt/>
                         </item_prototype>
@@ -152,12 +197,12 @@
                             <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
-                            <name>Input $1 Number of State Changes</name>
+                            <name>Number of $1 State Changes</name>
                             <type>1</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.21796.3.4.1.1.6.{#SNMPINDEX}</snmp_oid>
-                            <key>inpCounter[{#SNMPINDEX}]</key>
+                            <key>inpCounter[{#SNMPVALUE}]</key>
                             <delay>30</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -196,55 +241,10 @@ Only pulses longer than sampling interval are counted.</description>
                             <valuemap/>
                             <logtimefmt/>
                         </item_prototype>
-                        <item_prototype>
-                            <name>Input $1 Status</name>
-                            <type>1</type>
-                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                            <multiplier>0</multiplier>
-                            <snmp_oid>1.3.6.1.4.1.21796.3.4.1.1.2.{#SNMPINDEX}</snmp_oid>
-                            <key>inpValue[{#SNMPINDEX}]</key>
-                            <delay>30</delay>
-                            <history>90</history>
-                            <trends>365</trends>
-                            <status>0</status>
-                            <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units/>
-                            <delta>0</delta>
-                            <snmpv3_contextname/>
-                            <snmpv3_securityname/>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
-                            <data_type>3</data_type>
-                            <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description>The binary input value.</description>
-                            <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>Input</name>
-                                </application>
-                            </applications>
-                            <valuemap>
-                                <name>damoclesOnOff</name>
-                            </valuemap>
-                            <logtimefmt/>
-                        </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{ZBX-HWG-DAMOCLES:inpValue[{#SNMPINDEX}].diff(0)}=1</expression>
+                            <expression>{ZBX-HWG-DAMOCLES:inpValue[{#SNMPVALUE}].diff(0)}=1</expression>
                             <name>{#SNMPVALUE} input status was changed on {HOST.NAME}</name>
                             <url/>
                             <status>0</status>
@@ -253,7 +253,7 @@ Only pulses longer than sampling interval are counted.</description>
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{ZBX-HWG-DAMOCLES:inpAlarmState[{#SNMPINDEX}].last()}=1</expression>
+                            <expression>{ZBX-HWG-DAMOCLES:inpAlarmState[{#SNMPVALUE}].last()}=1</expression>
                             <name>{HOST.NAME} {#SNMPVALUE} Alarm</name>
                             <url/>
                             <status>0</status>
