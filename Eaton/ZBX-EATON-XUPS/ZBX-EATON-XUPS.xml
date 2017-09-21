@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2017-08-29T00:22:51Z</date>
+    <date>2017-09-21T05:24:03Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -53,7 +53,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.2.5.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.2.5.0</key>
+                    <key>xupsBatteryAbmStatus</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -98,7 +98,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.2.4.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.2.4.0</key>
+                    <key>xupsBatCapacity</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -141,7 +141,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.2.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.2.3.0</key>
+                    <key>xupsBatCurrent</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -184,7 +184,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.2.6.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.2.6.0</key>
+                    <key>xupsBatteryLastRep</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -227,7 +227,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.8.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.8.2.0</key>
+                    <key>xupsTestBatteryStatus</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -272,7 +272,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.2.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.2.1.0</key>
+                    <key>xupsBatTimeRemaining</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -315,7 +315,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.2.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.2.2.0</key>
+                    <key>xupsBatVoltage</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -358,7 +358,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.5.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.5.1.0</key>
+                    <key>xupsBypassFrequency</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -401,7 +401,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.3.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.5.2.0</key>
+                    <key>xupsBypassNumPhases</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -444,7 +444,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.10.7.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.10.7.0</key>
+                    <key>xupsConfigHighOutputVoltageLimit</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -487,7 +487,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.10.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.10.2.0</key>
+                    <key>xupsConfigInputVoltage</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -530,7 +530,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.10.8.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.10.8.0</key>
+                    <key>xupsConfigInstallDate</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -573,7 +573,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.10.6.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.10.6.0</key>
+                    <key>xupsConfigLowOutputVoltageLimit</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -616,7 +616,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.10.4.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.10.4.0</key>
+                    <key>xupsConfigOutputFreq</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -659,7 +659,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.10.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.10.1.0</key>
+                    <key>xupsConfigOutputVoltage</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -702,7 +702,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.10.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.10.3.0</key>
+                    <key>xupsConfigOutputWatts</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -745,7 +745,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.6.4.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.6.4.0</key>
+                    <key>xupsEnvAmbientHumidity</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -788,7 +788,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.6.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.6.1.0</key>
+                    <key>xupsEnvAmbientTemp</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -831,7 +831,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.6.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.6.2.0</key>
+                    <key>xupsEnvAmbientLowerLimit</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -874,7 +874,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.6.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.6.3.0</key>
+                    <key>xupsEnvAmbientUpperLimit</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -917,7 +917,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.6.6.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.6.6.0</key>
+                    <key>xupsEnvRemoteHumidity</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -960,7 +960,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.6.11.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.6.11.0</key>
+                    <key>xupsEnvRemoteHumidityLowerLimit</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1003,7 +1003,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.6.12.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.6.12.0</key>
+                    <key>xupsEnvRemoteHumidityUpperLimit</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1046,7 +1046,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.6.5.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.6.5.0</key>
+                    <key>xupsEnvRemoteTemp</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1089,7 +1089,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.6.9.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.6.9.0</key>
+                    <key>xupsEnvRemoteTempLowerLimit</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1132,7 +1132,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.6.10.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.6.10.0</key>
+                    <key>xupsEnvRemoteTempUpperLimit</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1175,7 +1175,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.3.5.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.3.5.0</key>
+                    <key>xupsInputSource</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1220,7 +1220,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.3.6.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.3.6.0</key>
+                    <key>xupsDualInputStatus</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1265,7 +1265,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.3.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.3.1.0</key>
+                    <key>xupsInputFrequency</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1308,7 +1308,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.3.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.3.2.0</key>
+                    <key>xupsInputLineBads</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1351,7 +1351,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.3.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.3.3.0</key>
+                    <key>xupsInputNumPhases</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1394,7 +1394,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.4.5.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.4.5.0</key>
+                    <key>xupsOutputSource</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1439,7 +1439,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.4.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.4.2.0</key>
+                    <key>xupsOutputFrequency</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1482,7 +1482,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.4.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.4.1.0</key>
+                    <key>xupsOutputLoad</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1525,7 +1525,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.4.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.4.3.0</key>
+                    <key>xupsOutputNumPhases</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1568,7 +1568,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.8.4.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.8.4.0</key>
+                    <key>xupsLastGeneralTestResult</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1613,7 +1613,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.2.1.33.1.1.4.0</snmp_oid>
-                    <key>1.3.6.1.2.1.33.1.1.4.0</key>
+                    <key>upsIdentAgentSoftwareVersion</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1656,7 +1656,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.2.1.1.4.0</snmp_oid>
-                    <key>1.3.6.1.2.1.1.4.0</key>
+                    <key>sysContact</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1699,7 +1699,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.2.1.1.6.0</snmp_oid>
-                    <key>1.3.6.1.2.1.1.6.0</key>
+                    <key>sysLocation</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1742,7 +1742,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.1.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.1.1.0</key>
+                    <key>xupsIdentManufacturer</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1785,7 +1785,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.1.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.1.2.0</key>
+                    <key>xupsIdentModel</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1828,7 +1828,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.2.1.1.5.0</snmp_oid>
-                    <key>1.3.6.1.2.1.1.5.0</key>
+                    <key>sysName</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1871,7 +1871,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.2.1.33.1.1.5.0</snmp_oid>
-                    <key>1.3.6.1.2.1.33.1.1.5.0</key>
+                    <key>upsIdentName</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1914,7 +1914,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.534.1.1.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.1.3.0</key>
+                    <key>xupsIdentSoftwareVersion</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1958,7 +1958,7 @@
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <snmp_oid>1.3.6.1.4.1.534.1.5.3.1.1</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.5.3.1.1</key>
+                    <key>xupsBypassPhase</key>
                     <delay>60</delay>
                     <status>0</status>
                     <allowed_hosts/>
@@ -1992,7 +1992,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.534.1.5.3.1.2.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.534.1.5.3.1.2.[{#SNMPINDEX}]</key>
+                            <key>xupsBypassVoltage[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -2059,7 +2059,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-XUPS</host>
-                                        <key>1.3.6.1.4.1.534.1.5.3.1.2.[{#SNMPINDEX}]</key>
+                                        <key>xupsBypassVoltage[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -2072,7 +2072,7 @@
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <snmp_oid>1.3.6.1.4.1.534.1.3.4.1.1</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.3.4.1.1</key>
+                    <key>xupsInputPhase</key>
                     <delay>60</delay>
                     <status>0</status>
                     <allowed_hosts/>
@@ -2106,7 +2106,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.534.1.3.4.1.3.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.534.1.3.4.1.3.[{#SNMPINDEX}]</key>
+                            <key>xupsInputCurrent[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -2149,7 +2149,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.534.1.3.4.1.2.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.534.1.3.4.1.2.[{#SNMPINDEX}]</key>
+                            <key>xupsInputVoltage[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -2192,7 +2192,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.534.1.3.4.1.4.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.534.1.3.4.1.4.[{#SNMPINDEX}]</key>
+                            <key>xupsInputWatts[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -2259,7 +2259,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-XUPS</host>
-                                        <key>1.3.6.1.4.1.534.1.3.4.1.3.[{#SNMPINDEX}]</key>
+                                        <key>xupsInputCurrent[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -2291,7 +2291,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-XUPS</host>
-                                        <key>1.3.6.1.4.1.534.1.3.4.1.2.[{#SNMPINDEX}]</key>
+                                        <key>xupsInputVoltage[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -2323,7 +2323,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-XUPS</host>
-                                        <key>1.3.6.1.4.1.534.1.3.4.1.4.[{#SNMPINDEX}]</key>
+                                        <key>xupsInputWatts[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -2336,7 +2336,7 @@
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <snmp_oid>1.3.6.1.4.1.534.1.4.4.1.1</snmp_oid>
-                    <key>1.3.6.1.4.1.534.1.4.4.1.1</key>
+                    <key>xupsOutputPhase</key>
                     <delay>60</delay>
                     <status>0</status>
                     <allowed_hosts/>
@@ -2370,7 +2370,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.534.1.4.4.1.3.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.534.1.4.4.1.3.[{#SNMPINDEX}]</key>
+                            <key>xupsOutputCurrent[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -2413,7 +2413,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.534.1.4.4.1.2.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.534.1.4.4.1.2.[{#SNMPINDEX}]</key>
+                            <key>xupsOutputVoltage[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -2456,7 +2456,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.534.1.4.4.1.4.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.534.1.4.4.1.4.[{#SNMPINDEX}]</key>
+                            <key>xupsOutputWatts[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -2523,7 +2523,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-XUPS</host>
-                                        <key>1.3.6.1.4.1.534.1.4.4.1.3.[{#SNMPINDEX}]</key>
+                                        <key>xupsOutputCurrent[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -2555,7 +2555,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-XUPS</host>
-                                        <key>1.3.6.1.4.1.534.1.4.4.1.2.[{#SNMPINDEX}]</key>
+                                        <key>xupsOutputVoltage[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -2587,7 +2587,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-XUPS</host>
-                                        <key>1.3.6.1.4.1.534.1.4.4.1.4.[{#SNMPINDEX}]</key>
+                                        <key>xupsOutputWatts[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -2607,7 +2607,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{ZBX-EATON-XUPS:1.3.6.1.4.1.534.1.2.4.0.last(0)}&lt;50</expression>
+            <expression>{ZBX-EATON-XUPS:xupsBatCapacity.last(0)}&lt;50</expression>
             <name>{HOST.NAME} Battery Level &lt;50% ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -2617,7 +2617,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-XUPS:1.3.6.1.4.1.534.1.2.1.0.last(0)}&lt;300</expression>
+            <expression>{ZBX-EATON-XUPS:xupsBatTimeRemaining.last(0)}&lt;300</expression>
             <name>{HOST.NAME} Battery Runtime &lt;5mins ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -2627,7 +2627,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-XUPS:1.3.6.1.4.1.534.1.2.1.0.last(0)}&lt;900</expression>
+            <expression>{ZBX-EATON-XUPS:xupsBatTimeRemaining.last(0)}&lt;900</expression>
             <name>{HOST.NAME} Battery Runtime &lt;15mins ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -2637,7 +2637,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-XUPS:1.3.6.1.4.1.534.1.8.2.0.last(0)}=3</expression>
+            <expression>{ZBX-EATON-XUPS:xupsTestBatteryStatus.last(0)}=3</expression>
             <name>{HOST.NAME} Battery Test ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -2647,7 +2647,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-XUPS:1.3.6.1.4.1.534.1.3.5.0.last(0)}&lt;&gt;3</expression>
+            <expression>{ZBX-EATON-XUPS:xupsInputSource.last(0)}&lt;&gt;3</expression>
             <name>{HOST.NAME} Input Source changed to {ITEM.VALUE1}</name>
             <url/>
             <status>0</status>
@@ -2657,7 +2657,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-XUPS:1.3.6.1.4.1.534.1.4.1.0.last(0)}&gt;75</expression>
+            <expression>{ZBX-EATON-XUPS:xupsOutputLoad.last(0)}&gt;75</expression>
             <name>{HOST.NAME} Output Load &gt;75% ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -2667,7 +2667,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-XUPS:1.3.6.1.4.1.534.1.4.1.0.last(0)}&gt;90</expression>
+            <expression>{ZBX-EATON-XUPS:xupsOutputLoad.last(0)}&gt;90</expression>
             <name>{HOST.NAME} Output Load &gt;90% ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -2677,7 +2677,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-XUPS:1.3.6.1.4.1.534.1.4.1.0.last(0)}&gt;100</expression>
+            <expression>{ZBX-EATON-XUPS:xupsOutputLoad.last(0)}&gt;100</expression>
             <name>{HOST.NAME} Output Load &gt;100% ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -2687,7 +2687,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-XUPS:1.3.6.1.4.1.534.1.4.5.0.last(0)}&lt;&gt;3</expression>
+            <expression>{ZBX-EATON-XUPS:xupsOutputSource.last(0)}&lt;&gt;3</expression>
             <name>{HOST.NAME} Output Source changed to {ITEM.VALUE1}</name>
             <url/>
             <status>0</status>
@@ -2725,7 +2725,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-XUPS</host>
-                        <key>1.3.6.1.4.1.534.1.2.5.0</key>
+                        <key>xupsBatteryAbmStatus</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2737,7 +2737,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-XUPS</host>
-                        <key>1.3.6.1.4.1.534.1.8.2.0</key>
+                        <key>xupsTestBatteryStatus</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -2769,7 +2769,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-XUPS</host>
-                        <key>1.3.6.1.4.1.534.1.2.4.0</key>
+                        <key>xupsBatCapacity</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2781,7 +2781,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-XUPS</host>
-                        <key>1.3.6.1.4.1.534.1.2.1.0</key>
+                        <key>xupsBatTimeRemaining</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -2813,7 +2813,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-XUPS</host>
-                        <key>1.3.6.1.4.1.534.1.2.3.0</key>
+                        <key>xupsBatCurrent</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2825,7 +2825,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-XUPS</host>
-                        <key>1.3.6.1.4.1.534.1.2.2.0</key>
+                        <key>xupsBatVoltage</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -2857,7 +2857,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-XUPS</host>
-                        <key>1.3.6.1.4.1.534.1.6.4.0</key>
+                        <key>xupsEnvAmbientHumidity</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2869,7 +2869,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-XUPS</host>
-                        <key>1.3.6.1.4.1.534.1.6.1.0</key>
+                        <key>xupsEnvAmbientTemp</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -2901,7 +2901,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-XUPS</host>
-                        <key>1.3.6.1.4.1.534.1.5.1.0</key>
+                        <key>xupsBypassFrequency</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2913,7 +2913,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-XUPS</host>
-                        <key>1.3.6.1.4.1.534.1.3.1.0</key>
+                        <key>xupsInputFrequency</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2925,7 +2925,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-XUPS</host>
-                        <key>1.3.6.1.4.1.534.1.4.2.0</key>
+                        <key>xupsOutputFrequency</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -2957,7 +2957,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-XUPS</host>
-                        <key>1.3.6.1.4.1.534.1.4.1.0</key>
+                        <key>xupsOutputLoad</key>
                     </item>
                 </graph_item>
             </graph_items>
