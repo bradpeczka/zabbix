@@ -50,26 +50,33 @@ Items
   * UPS Name
   * UPS Serial Number
   * UPS Software Version
-  * Discovery: Nypass Phase Voltage
+  * Discovery: Bypass Phase Voltage
   * Discovery: Input Phase Current
   * Discovery: Input Phase Voltage
   * Discovery: Input Phase Watts
   * Discovery: Output Phase Current
   * Discovery: Output Phase Voltage
   * Discovery: Output Phase Watts
+  * Discovery: Receptacle Auto Off Time
+  * Discovery: Receptacle Auto On Time
+  * Discovery: Receptacle Status
 
 Triggers
 --------
 
-  * **[CRITICAL]** => {HOST.NAME} Battery Runtime <5mins ({ITEM.VALUE1})
-  * **[CRITICAL]** => {HOST.NAME} Output Load >100% ({ITEM.VALUE1})
-  * **[HIGH]** => {HOST.NAME} Battery Runtime <15mins ({ITEM.VALUE1})
-  * **[HIGH]** => {HOST.NAME} Output Load >90% ({ITEM.VALUE1})
-  * **[DEGRADED]** => {HOST.NAME} Battery Test ({ITEM.VALUE1})
-  * **[DEGRADED]** => {HOST.NAME} Input Source changed to {ITEM.VALUE1}
-  * **[DEGRADED]** => {HOST.NAME} Output Source changed to {ITEM.VALUE1}
-  * **[WARNING]** => {HOST.NAME} Battery Level <50% ({ITEM.VALUE1})
-  * **[WARNING]** => {HOST.NAME} Output Load >75% ({ITEM.VALUE1})
+  * **[CRITICAL]** => {HOST.NAME}: Battery Runtime is <5mins ({ITEM.VALUE1})
+  * **[CRITICAL]** => {HOST.NAME}: Output Load is >100% ({ITEM.VALUE1})
+  * **[HIGH]** => {HOST.NAME}: Ambient Temperature is HIGH ({ITEM.VALUE2})
+  * **[HIGH]** => {HOST.NAME}: Battery Runtime is <15mins ({ITEM.VALUE1})
+  * **[HIGH]** => {HOST.NAME}: Output Load is >90% ({ITEM.VALUE1})
+  * **[HIGH]** => {HOST.NAME}: Remote Temperature is HIGH ({ITEM.VALUE2})
+  * **[DEGRADED]** => {HOST.NAME}: Ambient Temperature is LOW ({ITEM.VALUE2})
+  * **[DEGRADED]** => {HOST.NAME}: Input Source changed to {ITEM.VALUE1}
+  * **[DEGRADED]** => {HOST.NAME}: Last Battery Test Result is ({ITEM.VALUE1})
+  * **[DEGRADED]** => {HOST.NAME}: Output Source changed to {ITEM.VALUE1}
+  * **[DEGRADED]** => {HOST.NAME}: Remote Temperature is LOW ({ITEM.VALUE2})
+  * **[WARNING]** => {HOST.NAME}: Battery Level is <50% ({ITEM.VALUE1})
+  * **[WARNING]** => {HOST.NAME}: Output Load is >75% ({ITEM.VALUE1})
 
 Graphs
 --------
@@ -78,6 +85,7 @@ Graphs
   * Battery - Capacity/Runtime
   * Battery - Current/Voltage
   * Environment - Ambient Temperature/Humidity
+  * Environment - Remote Temperature/Humidity
   * Frequencies - Bypass/Input/Output
   * Output - Load
   * Discovery: Bypass - Phase Current
@@ -133,8 +141,17 @@ Installation
   * 5 ⇒ notSupported
   * 6 ⇒ inhibited
   * 7 ⇒ scheduled
-6. Add to your host the **{$SNMP_COMMUNITY}** macro with your SNMP community as value.
-7. Associate **ZBX-EATON-XUPS** template to the host.
+6. Add a value mapping named `xupsRecepStatus` with the following values:
+  * 1 ⇒ on
+  * 2 ⇒ off
+  * 3 ⇒ pendingOff
+  * 4 ⇒ pendingOn
+  * 5 ⇒ unknown
+  * 6 ⇒ reserved
+  * 7 ⇒ failedClosed
+  * 8 ⇒ failedOpen
+7. Add to your host the **{$SNMP_COMMUNITY}** macro with your SNMP community as value.
+8. Associate **ZBX-EATON-XUPS** template to the host.
 
 Requirements
 ------------
