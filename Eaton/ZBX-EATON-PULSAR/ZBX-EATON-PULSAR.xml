@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2017-08-29T00:22:48Z</date>
+    <date>2017-10-02T05:51:26Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -25,6 +25,9 @@
             </groups>
             <applications>
                 <application>
+                    <name>Agent</name>
+                </application>
+                <application>
                     <name>Battery</name>
                 </application>
                 <application>
@@ -40,17 +43,194 @@
                     <name>Output</name>
                 </application>
                 <application>
+                    <name>Receptacle</name>
+                </application>
+                <application>
                     <name>System</name>
                 </application>
             </applications>
             <items>
+                <item>
+                    <name>Agent - Firmware Version</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.705.1.12.12.0</snmp_oid>
+                    <key>upsmgAgentFirmwareVersion</key>
+                    <delay>3600</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>4</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Agent</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Agent - IP Address</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.705.1.12.1.0</snmp_oid>
+                    <key>upsmgAgentIpaddress</key>
+                    <delay>3600</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>4</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Agent</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Agent - MIB Version</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.705.1.12.11.0</snmp_oid>
+                    <key>upsmgAgentMibVersion</key>
+                    <delay>3600</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Agent</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Agent - Type</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.705.1.12.6.0</snmp_oid>
+                    <key>upsmgAgentType</key>
+                    <delay>3600</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Agent</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>upsmgAgentType</name>
+                    </valuemap>
+                    <logtimefmt/>
+                </item>
                 <item>
                     <name>Battery - Capacity</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.2.0</key>
+                    <key>upsmgBatteryLevel</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -93,7 +273,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.6.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.6.0</key>
+                    <key>upsmgBatteryCurrent</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -136,7 +316,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.10.5.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.10.5.0</key>
+                    <key>upsmgTestLastCalibration</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -179,7 +359,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.10.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.10.3.0</key>
+                    <key>upsmgTestDiagResult</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -224,7 +404,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.4.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.4.0</key>
+                    <key>upsmgBatteryRechargeLevel</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -267,7 +447,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.1.0</key>
+                    <key>upsmgBatteryRemainingTime</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -310,7 +490,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.7.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.7.0</key>
+                    <key>upsmgBatteryTemperature</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -353,7 +533,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.10.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.10.1.0</key>
+                    <key>upsmgTestBatterySchedule</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -398,7 +578,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.8.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.8.0</key>
+                    <key>upsmgBatteryFullRechargeTime</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -441,7 +621,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.3.0</key>
+                    <key>upsmgBatteryRechargeTime</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -484,7 +664,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.5.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.5.0</key>
+                    <key>upsmgBatteryVoltage</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -527,7 +707,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.9.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.9.0</key>
+                    <key>upsmgBatteryFaultBattery</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -572,7 +752,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.14.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.14.0</key>
+                    <key>upsmgBatteryLowBattery</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -617,52 +797,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.16.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.16.0</key>
-                    <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Battery</name>
-                        </application>
-                    </applications>
-                    <valuemap>
-                        <name>upsmgStatusYesNo</name>
-                    </valuemap>
-                    <logtimefmt/>
-                </item>
-                <item>
-                    <name>Battery Status - Needs to be replaced</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                    <multiplier>0</multiplier>
-                    <snmp_oid>1.3.6.1.4.1.705.1.5.11.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.11.0</key>
+                    <key>upsmgBatteryLowCondition</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -707,7 +842,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.10.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.10.0</key>
+                    <key>upsmgBatteryNoBattery</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -752,7 +887,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.15.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.15.0</key>
+                    <key>upsmgBatteryChargerFault</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -797,7 +932,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.13.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.13.0</key>
+                    <key>upsmgBatteryNotHighCharge</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -842,7 +977,52 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.17.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.17.0</key>
+                    <key>upsmgBatteryLowRecharge</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Battery</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>upsmgStatusYesNo</name>
+                    </valuemap>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Battery Status - Replacement Required</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.705.1.5.11.0</snmp_oid>
+                    <key>upsmgBatteryReplacement</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -887,7 +1067,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.5.12.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.5.12.0</key>
+                    <key>upsmgBatteryUnavailableBattery</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -932,7 +1112,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.26.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.26.0</key>
+                    <key>upsmgConfigEmergencyTestFail</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -977,7 +1157,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.27.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.27.0</key>
+                    <key>upsmgConfigEmergencyOnByPass</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1022,7 +1202,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.28.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.28.0</key>
+                    <key>upsmgConfigEmergencyOverload</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1067,7 +1247,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.20.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.20.0</key>
+                    <key>upsmgConfigAlarmTimeDelay</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1110,7 +1290,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.19.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.19.0</key>
+                    <key>upsmgConfigAlarmAudible</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1155,7 +1335,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.9.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.9.0</key>
+                    <key>upsmgConfigAutoRestart</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1200,7 +1380,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.1.0</key>
+                    <key>upsmgConfigBatteryInstalled</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1245,7 +1425,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.18.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.18.0</key>
+                    <key>upsmgConfigByPassType</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1290,7 +1470,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.14.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.14.0</key>
+                    <key>upsmgConfigHighTransfer</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1333,7 +1513,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.8.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.8.0</key>
+                    <key>upsmgConfigLowBatteryLevel</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1376,7 +1556,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.7.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.7.0</key>
+                    <key>upsmgConfigLowBatteryTime</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1419,7 +1599,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.13.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.13.0</key>
+                    <key>upsmgConfigLowTransfer</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1457,12 +1637,141 @@
                     <logtimefmt/>
                 </item>
                 <item>
+                    <name>Config - Maximum Recharge Time</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.705.1.4.5.0</snmp_oid>
+                    <key>upsmgConfigMaxRechargeTime</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>s</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Config</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Config - Minimum Recharge Level</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.705.1.4.5.0</snmp_oid>
+                    <key>upsmgConfigMinRechargeLevel</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>%</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Config</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Config - Nominal Battery Time</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.705.1.4.3.0</snmp_oid>
+                    <key>upsmgConfigNominalBatteryTime</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>s</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Config</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
                     <name>Config - Nominal Battery Voltage</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.2.0</key>
+                    <key>upsmgConfigNominalBatteryVoltage</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1505,7 +1814,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.16.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.16.0</key>
+                    <key>upsmgConfigOutputNominalCurrent</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1548,7 +1857,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.17.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.17.0</key>
+                    <key>upsmgConfigOutputNomFrequency</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1591,7 +1900,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.15.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.15.0</key>
+                    <key>upsmgConfigOutputNominalVoltage</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1634,7 +1943,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.4.12.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.4.12.0</key>
+                    <key>upsmgConfigVARating</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1677,7 +1986,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.8.2.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.8.2.0</key>
+                    <key>upsmgEnvironAmbientHumidity</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1720,7 +2029,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.8.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.8.1.0</key>
+                    <key>upsmgEnvironAmbientTemp</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1763,8 +2072,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.6.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.6.1.0</key>
-                    <delay>60</delay>
+                    <key>upsmgInputPhaseNum</key>
+                    <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1808,7 +2117,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.6.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.6.3.0</key>
+                    <key>upsmgInputBadStatus</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1853,7 +2162,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.6.4.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.6.4.0</key>
+                    <key>upsmgInputLineFailCause</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1898,8 +2207,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.7.1.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.7.1.0</key>
-                    <delay>60</delay>
+                    <key>upsmgOutputPhaseNum</key>
+                    <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1943,7 +2252,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.7.5.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.7.5.0</key>
+                    <key>upsmgOutputUnavailableByPass</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -1988,7 +2297,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.7.9.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.7.9.0</key>
+                    <key>upsmgOutputInverterOff</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2004,7 +2313,7 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>0</formula>
+                    <formula>1</formula>
                     <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
@@ -2033,7 +2342,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.7.6.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.7.6.0</key>
+                    <key>upsmgOutputNoByPass</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2078,7 +2387,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.7.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.7.3.0</key>
+                    <key>upsmgOutputOnBattery</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2094,7 +2403,7 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>0</formula>
+                    <formula>1</formula>
                     <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
@@ -2123,7 +2432,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.7.8.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.7.8.0</key>
+                    <key>upsmgOutputOnBoost</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2139,7 +2448,7 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>0</formula>
+                    <formula>1</formula>
                     <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
@@ -2168,7 +2477,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.7.12.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.7.12.0</key>
+                    <key>upsmgOutputOnBuck</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2213,7 +2522,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.7.4.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.7.4.0</key>
+                    <key>upsmgOutputOnByPass</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2258,7 +2567,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.7.10.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.7.10.0</key>
+                    <key>upsmgOutputOverLoad</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2303,7 +2612,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.7.11.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.7.11.0</key>
+                    <key>upsmgOutputOverTemp</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2319,7 +2628,7 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>0</formula>
+                    <formula>1</formula>
                     <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
@@ -2348,7 +2657,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.7.7.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.7.7.0</key>
+                    <key>upsmgOutputUtilityOff</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2364,7 +2673,7 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>0</formula>
+                    <formula>1</formula>
                     <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
@@ -2393,8 +2702,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.2.1.1.4.0</snmp_oid>
-                    <key>1.3.6.1.2.1.1.4.0</key>
-                    <delay>60</delay>
+                    <key>sysContact</key>
+                    <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2431,13 +2740,56 @@
                     <logtimefmt/>
                 </item>
                 <item>
+                    <name>UPS Family Name</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.705.1.1.1.0</snmp_oid>
+                    <key>upsmgIdentFamilyName</key>
+                    <delay>3600</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>4</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>System</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
                     <name>UPS FW Revision</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.1.4.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.1.4.0</key>
-                    <delay>60</delay>
+                    <key>upsmgIdentFirmwareVersion</key>
+                    <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2479,8 +2831,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.1.3.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.1.3.0</key>
-                    <delay>60</delay>
+                    <key>upsmgIdentRevisionLevel</key>
+                    <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2522,8 +2874,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.1.6.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.1.6.0</key>
-                    <delay>60</delay>
+                    <key>upsmgIdentInstallationDate</key>
+                    <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2565,8 +2917,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.2.1.1.6.0</snmp_oid>
-                    <key>1.3.6.1.2.1.1.6.0</key>
-                    <delay>60</delay>
+                    <key>sysLocation</key>
+                    <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2694,8 +3046,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.2.1.1.5.0</snmp_oid>
-                    <key>1.3.6.1.2.1.1.5.0</key>
-                    <delay>60</delay>
+                    <key>sysName</key>
+                    <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2737,8 +3089,8 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.705.1.1.7.0</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.1.7.0</key>
-                    <delay>60</delay>
+                    <key>upsmgIdentSerialNumber</key>
+                    <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2777,12 +3129,609 @@
             </items>
             <discovery_rules>
                 <discovery_rule>
+                    <name>Config - Environmental Sensors Table</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.2.1</snmp_oid>
+                    <key>upsmgConfigSensorIndex</key>
+                    <delay>3600</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
+                    <lifetime>30</lifetime>
+                    <description/>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>Config - Environment Sensor [{#SNMPINDEX}] High Humidity Limit</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.7.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgConfigHumidityHigh[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>%</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Config</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Config - Environment Sensor [{#SNMPINDEX}] High Temperature Limit</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.4.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgConfigTemperatureHigh[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>C</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Config</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Config - Environment Sensor [{#SNMPINDEX}] Humidity Hysteresis</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.8.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgConfigHumidityHysteresis[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>%</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Config</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Config - Environment Sensor [{#SNMPINDEX}] Input #1 Closed Label</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.10.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgConfigInput1ClosedLabel[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>4</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Config</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Config - Environment Sensor [{#SNMPINDEX}] Input #1 Name</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.9.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgConfigInput1Name[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>4</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Config</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Config - Environment Sensor [{#SNMPINDEX}] Input #1 Open Label</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.11.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgConfigInput1OpenLabel[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>4</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Config</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Config - Environment Sensor [{#SNMPINDEX}] Input #2 Closed Label</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.13.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgConfigInput2ClosedLabel[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>4</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Config</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Config - Environment Sensor [{#SNMPINDEX}] Input #2 Name</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.12.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgConfigInput2Name[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>4</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Config</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Config - Environment Sensor [{#SNMPINDEX}] Input #2 Open Label</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.14.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgConfigInput2OpenLabel[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>4</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Config</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Config - Environment Sensor [{#SNMPINDEX}] Low Humidity Limit</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.6.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgConfigHumidityLow[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>%</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Config</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Config - Environment Sensor [{#SNMPINDEX}] Low Temperature Limit</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.3.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgConfigTemperatureLow[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>C</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Config</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Config - Environment Sensor [{#SNMPINDEX}] Name</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.2.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgConfigSensorName[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>4</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Config</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Config - Environment Sensor [{#SNMPINDEX}] Temperature Hysteresis</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.4.34.1.5.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgConfigTemperatureHysteresis[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>C</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Config</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes/>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                </discovery_rule>
+                <discovery_rule>
                     <name>Environment Table</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <snmp_oid>1.3.6.1.4.1.705.1.8.7.1.1</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.8.7.1.1</key>
-                    <delay>60</delay>
+                    <key>upsmgEnvironmentIndex</key>
+                    <delay>3600</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -2815,7 +3764,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.705.1.8.7.1.2.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.705.1.8.7.1.2.[{#SNMPINDEX}]</key>
+                            <key>upsmgEnvironmentComFailure[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -2860,7 +3809,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.705.1.8.7.1.6.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.705.1.8.7.1.6.[{#SNMPINDEX}]</key>
+                            <key>upsmgEnvironmentHumidity[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -2894,6 +3843,94 @@
                                     <name>Environment</name>
                                 </application>
                             </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Environment - Sensor $1 Humidity is High</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.8.7.1.8.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgEnvironmentHumidityHigh[{#SNMPINDEX}]</key>
+                            <delay>60</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>0</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Environment</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>upsmgStatusYesNo</name>
+                            </valuemap>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Environment - Sensor $1 Humidity is Low</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.8.7.1.7.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgEnvironmentHumidityLow[{#SNMPINDEX}]</key>
+                            <delay>60</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>0</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Environment</name>
+                                </application>
+                            </applications>
                             <valuemap>
                                 <name>upsmgStatusYesNo</name>
                             </valuemap>
@@ -2905,7 +3942,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.705.1.8.7.1.3.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.705.1.8.7.1.3.[{#SNMPINDEX}]</key>
+                            <key>upsmgEnvironmentTemperature[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -2939,13 +3976,138 @@
                                     <name>Environment</name>
                                 </application>
                             </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Environment - Sensor $1 Temperature is High</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.8.7.1.5.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgEnvironmentTemperatureHigh[{#SNMPINDEX}]</key>
+                            <delay>60</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>0</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Environment</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>upsmgStatusYesNo</name>
+                            </valuemap>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Environment - Sensor $1 Temperature is Low</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.8.7.1.4.{#SNMPINDEX}</snmp_oid>
+                            <key>upsmgEnvironmentTemperatureLow[{#SNMPINDEX}]</key>
+                            <delay>60</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>0</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Environment</name>
+                                </application>
+                            </applications>
                             <valuemap>
                                 <name>upsmgStatusYesNo</name>
                             </valuemap>
                             <logtimefmt/>
                         </item_prototype>
                     </item_prototypes>
-                    <trigger_prototypes/>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{ZBX-EATON-PULSAR:upsmgEnvironmentHumidityHigh[{#SNMPINDEX}].last()}=1</expression>
+                            <name>Environment - Humidity is High ({ITEM.VALUE1})</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{ZBX-EATON-PULSAR:upsmgEnvironmentHumidityLow[{#SNMPINDEX}].last()}=1</expression>
+                            <name>Environment - Humidity is Low ({ITEM.VALUE1})</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{ZBX-EATON-PULSAR:upsmgEnvironmentTemperatureHigh[{#SNMPINDEX}].last()}=1</expression>
+                            <name>Environment - Temperature is High ({ITEM.VALUE1})</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{ZBX-EATON-PULSAR:upsmgEnvironmentTemperatureLow[{#SNMPINDEX}].last()}=1</expression>
+                            <name>Environment - Temperature is Low ({ITEM.VALUE1})</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                    </trigger_prototypes>
                     <graph_prototypes>
                         <graph_prototype>
                             <name>Environment - Sensor {#SNMPINDEX} Humidity</name>
@@ -2974,7 +4136,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-PULSAR</host>
-                                        <key>1.3.6.1.4.1.705.1.8.7.1.6.[{#SNMPINDEX}]</key>
+                                        <key>upsmgEnvironmentHumidity[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -3006,7 +4168,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-PULSAR</host>
-                                        <key>1.3.6.1.4.1.705.1.8.7.1.3.[{#SNMPINDEX}]</key>
+                                        <key>upsmgEnvironmentTemperature[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -3019,8 +4181,8 @@
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <snmp_oid>1.3.6.1.4.1.705.1.6.2.1.1</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.6.2.1.1</key>
-                    <delay>60</delay>
+                    <key>mginputIndex</key>
+                    <delay>3600</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -3053,7 +4215,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.705.1.6.2.1.6.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.705.1.6.2.1.6.[{#SNMPINDEX}]</key>
+                            <key>mginputCurrent[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -3096,7 +4258,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.705.1.6.2.1.3.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.705.1.6.2.1.3.[{#SNMPINDEX}]</key>
+                            <key>mginputFrequency[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -3139,7 +4301,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.705.1.6.2.1.5.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.705.1.6.2.1.5.[{#SNMPINDEX}]</key>
+                            <key>mginputMaximumVoltage[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -3182,7 +4344,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.705.1.6.2.1.4.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.705.1.6.2.1.4.[{#SNMPINDEX}]</key>
+                            <key>mginputMinimumVoltage[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -3225,7 +4387,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.705.1.6.2.1.2.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.705.1.6.2.1.2.[{#SNMPINDEX}]</key>
+                            <key>mginputVoltage[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -3265,7 +4427,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.6.2.1.2.[{#SNMPINDEX}].last()}&lt;177 or {ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.6.2.1.2.[{#SNMPINDEX}].last()}&gt;250</expression>
+                            <expression>{ZBX-EATON-PULSAR:mginputVoltage[{#SNMPINDEX}].last()}&lt;177 or {ZBX-EATON-PULSAR:mginputVoltage[{#SNMPINDEX}].last()}&gt;250</expression>
                             <name>Input - Phase {#SNMPINDEX} Voltage not in limits 177-250 V ({ITEM.VALUE1})</name>
                             <url/>
                             <status>0</status>
@@ -3302,7 +4464,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-PULSAR</host>
-                                        <key>1.3.6.1.4.1.705.1.6.2.1.6.[{#SNMPINDEX}]</key>
+                                        <key>mginputCurrent[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -3334,7 +4496,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-PULSAR</host>
-                                        <key>1.3.6.1.4.1.705.1.6.2.1.3.[{#SNMPINDEX}]</key>
+                                        <key>mginputFrequency[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -3366,7 +4528,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-PULSAR</host>
-                                        <key>1.3.6.1.4.1.705.1.6.2.1.2.[{#SNMPINDEX}]</key>
+                                        <key>mginputVoltage[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -3379,8 +4541,8 @@
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <snmp_oid>1.3.6.1.4.1.705.1.7.2.1.1</snmp_oid>
-                    <key>1.3.6.1.4.1.705.1.7.2.1.1</key>
-                    <delay>60</delay>
+                    <key>mgoutputPhaseIndex</key>
+                    <delay>3600</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -3413,7 +4575,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.705.1.7.2.1.5.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.705.1.7.2.1.5.[{#SNMPINDEX}]</key>
+                            <key>mgoutputCurrent[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -3456,7 +4618,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.705.1.7.2.1.3.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.705.1.7.2.1.3.[{#SNMPINDEX}]</key>
+                            <key>mgoutputFrequency[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -3499,7 +4661,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.705.1.7.2.1.4.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.705.1.7.2.1.4.[{#SNMPINDEX}]</key>
+                            <key>mgoutputLoadPerPhase[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -3542,7 +4704,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.705.1.7.2.1.2.{#SNMPINDEX}</snmp_oid>
-                            <key>1.3.6.1.4.1.705.1.7.2.1.2.[{#SNMPINDEX}]</key>
+                            <key>mgoutputVoltage[{#SNMPINDEX}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -3609,7 +4771,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-PULSAR</host>
-                                        <key>1.3.6.1.4.1.705.1.7.2.1.5.[{#SNMPINDEX}]</key>
+                                        <key>mgoutputCurrent[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -3641,7 +4803,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-PULSAR</host>
-                                        <key>1.3.6.1.4.1.705.1.7.2.1.3.[{#SNMPINDEX}]</key>
+                                        <key>mgoutputFrequency[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -3673,7 +4835,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-PULSAR</host>
-                                        <key>1.3.6.1.4.1.705.1.7.2.1.4.[{#SNMPINDEX}]</key>
+                                        <key>mgoutputLoadPerPhase[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -3705,12 +4867,181 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-EATON-PULSAR</host>
-                                        <key>1.3.6.1.4.1.705.1.7.2.1.2.[{#SNMPINDEX}]</key>
+                                        <key>mgoutputVoltage[{#SNMPINDEX}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
                         </graph_prototype>
                     </graph_prototypes>
+                    <host_prototypes/>
+                </discovery_rule>
+                <discovery_rule>
+                    <name>Receptacles Table</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <snmp_oid>1.3.6.1.4.1.705.1.3.2.1.1</snmp_oid>
+                    <key>mgreceptacleIndex</key>
+                    <delay>3600</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
+                    <lifetime>30</lifetime>
+                    <description/>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>Receptacle $1 Description</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.3.2.1.3.{#SNMPINDEX}</snmp_oid>
+                            <key>mgreceptacleType[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>4</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Receptacle</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Receptacle $1 Identification</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.3.2.1.4.{#SNMPINDEX}</snmp_oid>
+                            <key>mgreceptacleIdent[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>4</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Receptacle</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Receptacle $1 State</name>
+                            <type>1</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>1.3.6.1.4.1.705.1.3.2.1.5.{#SNMPINDEX}</snmp_oid>
+                            <key>mgreceptacleState[{#SNMPINDEX}]</key>
+                            <delay>30</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Receptacle</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>mgreceptacleState</name>
+                            </valuemap>
+                            <logtimefmt/>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes/>
+                    <graph_prototypes/>
                     <host_prototypes/>
                 </discovery_rule>
             </discovery_rules>
@@ -3725,7 +5056,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.10.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgBatteryNoBattery.last(0)}=1</expression>
             <name>Battery - NO battery ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3735,7 +5066,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.13.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgBatteryNotHighCharge.last(0)}=1</expression>
             <name>Battery - Non High Charge ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3745,7 +5076,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.15.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgBatteryChargerFault.last(0)}=1</expression>
             <name>Battery - Not charging ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3755,7 +5086,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.17.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgBatteryLowRecharge.last(0)}=1</expression>
             <name>Battery - Not Recharged ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3765,7 +5096,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.12.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgBatteryUnavailableBattery.last(0)}=1</expression>
             <name>Battery - Status Unavailable ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3775,7 +5106,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.9.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgBatteryFaultBattery.last(0)}=1</expression>
             <name>Battery FAULT ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3785,7 +5116,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.2.0.last(0)}&lt;50</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgBatteryLevel.last(0)}&lt;50</expression>
             <name>Battery Level &lt;50% ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3795,7 +5126,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.14.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgBatteryLowBattery.last(0)}=1</expression>
             <name>Battery Low ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3805,7 +5136,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.11.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgBatteryReplacement.last(0)}=1</expression>
             <name>Battery Needs to be replaced ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3815,7 +5146,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.1.0.last(0)}&lt;5m</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgBatteryRemainingTime.last(0)}&lt;5m</expression>
             <name>Battery Runtime &lt;5min ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3825,7 +5156,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.5.1.0.last(0)}&lt;15m</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgBatteryRemainingTime.last(0)}&lt;15m</expression>
             <name>Battery Runtime &lt;15min ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3835,7 +5166,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.6.3.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgInputBadStatus.last(0)}=1</expression>
             <name>Input - Bad Voltage/Frequency {ITEM.VALUE1}</name>
             <url/>
             <status>0</status>
@@ -3845,12 +5176,12 @@
             <dependencies>
                 <dependency>
                     <name>Input - Cause of Input Line Fail {ITEM.VALUE1}</name>
-                    <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.6.4.0.last(0)}&gt;1</expression>
+                    <expression>{ZBX-EATON-PULSAR:upsmgInputLineFailCause.last(0)}&gt;1</expression>
                 </dependency>
             </dependencies>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.6.4.0.last(0)}&gt;1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgInputLineFailCause.last(0)}&gt;1</expression>
             <name>Input - Cause of Input Line Fail {ITEM.VALUE1}</name>
             <url/>
             <status>0</status>
@@ -3860,12 +5191,12 @@
             <dependencies>
                 <dependency>
                     <name>Output - Utility Off({ITEM.VALUE1})</name>
-                    <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.7.0.last(0)}=1</expression>
+                    <expression>{ZBX-EATON-PULSAR:upsmgOutputUtilityOff.last(0)}=1</expression>
                 </dependency>
             </dependencies>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.5.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgOutputUnavailableByPass.last(0)}=1</expression>
             <name>Output - Bypass Unavailable ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3875,7 +5206,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.9.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgOutputInverterOff.last(0)}=1</expression>
             <name>Output - Inverter Off ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3885,7 +5216,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.6.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgOutputNoByPass.last(0)}=1</expression>
             <name>Output - No Bypass Installed ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3895,7 +5226,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.3.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgOutputOnBattery.last(0)}=1</expression>
             <name>Output - On Battery ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3905,7 +5236,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.8.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgOutputOnBoost.last(0)}=1</expression>
             <name>Output - On Boost ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3915,7 +5246,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.4.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgOutputOnByPass.last(0)}=1</expression>
             <name>Output - On Bypass ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3925,7 +5256,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.12.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgOutputOnBuck.last(0)}=1</expression>
             <name>Output - On Fader (on buck) ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3935,7 +5266,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.10.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgOutputOverLoad.last(0)}=1</expression>
             <name>Output - Over Load ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3945,7 +5276,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.11.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgOutputOverTemp.last(0)}=1</expression>
             <name>Output - Over Temperature ({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3955,7 +5286,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZBX-EATON-PULSAR:1.3.6.1.4.1.705.1.7.7.0.last(0)}=1</expression>
+            <expression>{ZBX-EATON-PULSAR:upsmgOutputUtilityOff.last(0)}=1</expression>
             <name>Output - Utility Off({ITEM.VALUE1})</name>
             <url/>
             <status>0</status>
@@ -3993,7 +5324,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-PULSAR</host>
-                        <key>1.3.6.1.4.1.705.1.5.2.0</key>
+                        <key>upsmgBatteryLevel</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4005,7 +5336,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-PULSAR</host>
-                        <key>1.3.6.1.4.1.705.1.5.1.0</key>
+                        <key>upsmgBatteryRemainingTime</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4037,7 +5368,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-PULSAR</host>
-                        <key>1.3.6.1.4.1.705.1.5.6.0</key>
+                        <key>upsmgBatteryCurrent</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4049,7 +5380,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-PULSAR</host>
-                        <key>1.3.6.1.4.1.705.1.5.5.0</key>
+                        <key>upsmgBatteryVoltage</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -4081,7 +5412,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-PULSAR</host>
-                        <key>1.3.6.1.4.1.705.1.8.1.0</key>
+                        <key>upsmgEnvironAmbientTemp</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -4093,7 +5424,7 @@
                     <type>0</type>
                     <item>
                         <host>ZBX-EATON-PULSAR</host>
-                        <key>1.3.6.1.4.1.705.1.8.2.0</key>
+                        <key>upsmgEnvironAmbientHumidity</key>
                     </item>
                 </graph_item>
             </graph_items>
