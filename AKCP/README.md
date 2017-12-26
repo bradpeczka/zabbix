@@ -74,6 +74,8 @@ Requirements
 
 This template was tested on Zabbix 2.4.6. The template currently only supports Temperature and Humidity sensors, largely because my test sensor is a unit that's old enough to vote in Australia!
 
+AKCP appears to OEM sensors for a number of other companies - my test unit is a 'Netic', but I have also seen them being sold under the 'Jacarta' and 'Didactum' brands, amongst others. In most cases the unit itself is still badged as a 'SensorProbe' or 'SensorProbe2'.
+
 License
 -------
 
