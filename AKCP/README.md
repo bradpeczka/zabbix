@@ -59,13 +59,14 @@ Installation
   * 5 ⇒ lowWarning
   * 6 ⇒ lowCritical
   * 7 ⇒ sensorError
-3. Add to your host the **{$SNMP_COMMUNITY}** macro with your SNMP community as value.
-4. Associate **ZBX-AKCP-SP2** template to the host.
+4. Ensure each sensor to be monitored on the device is configured with its threshold and rearm values, as these are used for the triggers within Zabbix.
+5. Add to your host the **{$SNMP_COMMUNITY}** macro with your SNMP community as value.
+6. Associate the **ZBX-AKCP-SP2** template to the host.
 
 To-Do
 ------------
 
-  * Implement discovery for sensors
+  * Implement discovery for sensors. Currently this template assumes that the device will have a Temperature sensor connected on Port 1, and a Humidity sensor connected on Port 2.
   * Refine the alerting logic
   * Implement support for other sensor types
 
