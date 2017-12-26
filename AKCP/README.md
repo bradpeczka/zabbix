@@ -59,7 +59,8 @@ Installation
   * 5 ⇒ lowWarning
   * 6 ⇒ lowCritical
   * 7 ⇒ sensorError
-4. Ensure each sensor to be monitored on the device is configured with its threshold and rearm values, as these are used for the triggers within Zabbix.
+3. Connect a Temperature sensor to Port 1 on the device, and a Humidity sensor to Port 2.
+4. Ensure each sensor being monitored is configured with its threshold and rearm values within the device administration interface, as these are used for the triggers within Zabbix.
 5. Add to your host the **{$SNMP_COMMUNITY}** macro with your SNMP community as value.
 6. Associate the **ZBX-AKCP-SP2** template to the host.
 
