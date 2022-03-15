@@ -3,6 +3,8 @@ Zabbix Templates
 
 A collection of Zabbix templates!
 
+**Update 2022-03-15**: I no longer have a Zabbix installation and haven't been able to update, or use, these templates in a very long time. You might find some inspiration from it, but otherwise please consider it to be unsupported.
+
 Templates
 ---------
 
